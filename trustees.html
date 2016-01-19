@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+<head>
+    <title>CCAR: Trustees</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    	body {
+    		margin: 0;
+    		padding: 0;
+    		background-color: #F0F0F0;
+    	}
+    	
+    	#logo-bar {
+    		width: 100%;
+    		margin: 0;
+    		height: 100px;
+    		position: relative;
+    		background: #0B0B3B;
+    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
+    		background: -o-linear-gradient(#08298A, #0B0B3B);
+    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		z-index: 100;
+    	}
+    	
+    	#logo-bar div {
+    		padding: 35px 0 0 40px;
+    		font-family: Century Gothic;
+    		font-size: 1.3em;
+    		color: white;
+    	}
+    
+		#wrap {
+			width: 100%;
+			margin: 0;
+			height: 30px;
+			z-index: 99;
+			position: relative;
+			background: #F5C50D;
+		}
+	
+		.navbar {
+			height: 30px;
+			padding: 0 0 0 40px;
+			margin: 0;
+			position: absolute;
+			text-align: center;
+		}
+		
+		.navbar li {
+			width: 150px;
+			float: left;
+			text-align: center;
+			list-style: none;
+			font-family: Century Gothic;
+			font-size: 0.8em;
+			font-weight: bold;
+			padding: 0;
+			margin: 0;
+		}
+		
+		/*
+		.navbar #first {
+			border-left: 1px solid #DBA901;
+			border-right: 1px solid #DBA901;
+		}
+		
+		.navbar #last {
+			border-right: 1px solid #DBA901;
+			border-left: 1px solid #DBA901;
+		}
+		*/
+		
+		#home a {
+			color: white;
+			text-decoration: none;
+		}
+		
+		.navbar a {
+			padding: 7px 0;
+			text-decoration: none;
+			color: black;
+			display: block;
+		}
+		
+		.navbar a:hover {
+			background-color: #08298A;
+			color: white;
+		}
+		
+		.navbar li ul {
+			display: none;
+			height: auto;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.navbar li:hover ul {
+			display: block;
+		}
+		
+		.navbar li ul li {
+			background-color: #D8D8D8;
+		}
+		
+		#wrap2 {
+			background-color: white;
+			width: 900px;
+			height: 1950px;
+			margin: 0 auto;
+		}
+		
+		#main {
+			width: 800px;
+			height: 1800px;
+			top: 100px;
+			margin: 0 auto;
+			position: relative;
+			background: #F0F0F0;
+		}
+		
+		#motto {
+			font-family: Century Gothic;
+			font-weight: bold;
+			font-size: 2em;
+			color: #2E2E2E;
+			padding: 25px 0 25px 0;
+			text-align: center;
+		}
+		
+		#body {
+			font-family: Helvetica Neue;
+			font-size: 1em;
+			line-height: 175%;
+			position: relative;
+			margin: 0 25px 25px 25px;
+			color: #333;
+		}
+		
+		#footer {
+			height: 140px;
+			width: 100%;
+			text-align: center;
+			bottom: 0;
+			position: relative;
+			margin-top: 30px;
+			background: #0B0B3B;
+    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
+    		background: -o-linear-gradient(#08298A, #0B0B3B);
+    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		border-top: 10px solid #F5C50D;
+		}
+		
+		#rights {
+			padding-top: 10px;
+			color: white;
+		}
+		
+		p {
+			text-indent: 2px;
+		}
+		
+		.profile {
+			float:left;
+			width: 360px;
+ 			height: 160px;
+ 			line-height: 0px;
+ 			color: transparent;
+ 			font-size: 14px;
+ 			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, 							Arial, sans-serif;
+    		font-weight: 300;
+ 			-webkit-transition: all 0.5s ease;
+ 			-moz-transition: all 0.5s ease;
+ 			-o-transition: all 0.5s ease;
+		}
+		
+		.profile li a {
+			color:transparent;
+			}
+ 
+		.profile:hover {
+			line-height: 20px;
+			color: #575858;
+			background: white;
+		}
+		
+		.profile:hover li a {
+			line-height: 20px;
+			color: blue;
+		}
+ 
+		.profile img{
+			float: left;
+			margin-right: 4px;
+			height:160px;
+			width:140px;
+		}
+		
+		.profile2 {
+			float:right;
+			width: 360px;
+ 			height: 160px;
+ 			line-height: 0px;
+ 			color: transparent;
+ 			font-size: 14px;
+ 			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, 							Arial, sans-serif;
+    		font-weight: 300;
+ 			-webkit-transition: all 0.5s ease;
+ 			-moz-transition: all 0.5s ease;
+ 			-o-transition: all 0.5s ease;
+		}
+		
+		.profile2 li a {
+			color:transparent;
+			}
+ 
+		.profile2:hover {
+			line-height: 20px;
+			color: #575858;
+			background: white;
+		}
+ 
+ 		.profile2:hover li a {
+			line-height: 20px;
+			color: blue;
+		}
+ 
+		.profile2 img{
+			float: left;
+			margin-right: 4px;
+			height:160px;
+			width:140px;
+		}
+		
+		.trustee {
+			width: 360px;
+			height:200px;
+			padding:0;
+			margin-bottom: 25px;
+			background: #0B0B3B;
+    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
+    		background: -o-linear-gradient(#08298A, #0B0B3B);
+    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		float:left;
+		}
+		
+		.trustee2 {
+			width: 360px;
+			height:200px;
+			padding:0;
+			margin-bottom: 25px;
+			background: #0B0B3B;
+    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
+    		background: -o-linear-gradient(#08298A, #0B0B3B);
+    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		float:right;
+		}
+		
+		.name {
+			width: 360px;
+			height:40px;
+			font-size: 22px;
+ 			font-family: Century Gothic;
+    		font-weight: 300;
+			background-color: #F5C50D;
+			
+		}
+		
+		.otis li {
+    		list-style-type: none;
+		}
+		
+    </style>    
+</head>
+<!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
+<body>
+	<div id="logo-bar">
+		<div id = "home"><a href="index.html">Contra Costa Association of Realtors</a></div>
+	</div>
+	<div id="wrap">
+		<ul class="navbar">
+			<li id="first"><a href="#">SCHOLARSHIP</a>
+				<ul>
+					<li><a href="#">ELIGIBILITY</a></li>
+					<li><a href="#">APPLICATION</a></li>
+				</ul>
+			</li>
+			<li><a href="foundation.html">FOUNDATION</a>
+				<ul>
+					<li><a href="contribution.html">CONTRIBUTION</a></li>
+					<li><a href="trustees.html">TRUSTEES</a></li>
+				</ul>
+			</li>
+			<li id="last"><a href="#">EVENTS</a></li>
+		</ul>
+	</div>
+	<div id="wrap2">
+		<div id="main">
+			<div id="motto"><em>Meet the CCAR Scholarship Trustees</em></div>
+			<div id="body">
+				<div class = "trustee">
+				<div class = "name">Lynda Dimond</div>
+					<div class = "profile">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>President</li>
+							<li>Keller Williams Realty</li>
+							<li>(925) 787-9595</li>
+							<li><a href="mailto:lynda@thedimondteam.com">lynda@thedimondteam.com</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class = "trustee2">
+				<div class = "name">Julie Del Santo</div>
+					<div class = "profile2">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Vice President</li>
+							<li>Dadum Real Estate</li>
+							<li>(925) 818-5500</li>
+							<li><a href="mailto:julie@dudum.com">julie@dudum.com</a></li>
+						</ul>
+					</div>
+				</div>	
+			
+				
+				
+				<div class = "trustee">
+				<div class = "name">Julie Sullivan</div>
+					<div class = "profile">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Secretary</li>
+							<li>(925) 200-3411</li>
+							<li><a href="mailto:julie@julie-sullivan.com">julie@julie-sullivan.com</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class = "trustee2">
+				<div class = "name">Karen Newsom</div>
+					<div class = "profile2">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Administrative Assistant</li>
+							<li>(925) 819-1781</li>
+							<li><a href="mailto:ccarsf2015@outlook.com">ccarsf2015@outlook.com</a></li>
+						</ul>
+					</div>
+				</div>	
+				
+				
+				
+				<div class = "trustee">
+				<div class = "name">Marianne Bordogna</div>
+					<div class = "profile">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Treasurer</li>
+							<li>Keller Williams Realty</li>
+							<li>(925) 202-5508</li>
+							<li><a href="mailto:marriane@marrianebordogna.com">marriane@marrianebordogna.com</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class = "trustee2">
+				<div class = "name">Dianne Harrison</div>
+					<div class = "profile2">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Trustee</li>
+							<li>J. Rockcliff Realtors</li>
+							<li>(925) 788-1944</li>
+							<li><a href="mailto:dharrison@rockcliff.com">dharrison@rockcliff.com</a></li>
+						</ul>
+					</div>
+				</div>	
+				
+				
+				
+				<div class = "trustee">
+				<div class = "name">Tom Hart</div>
+					<div class = "profile">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Trustee</li>
+							<li>Empire Realty Associates</li>
+							<li>(925) 355-1187</li>
+							<li><a href="mailto:tom@tomhart.com">tom@tomhart.com</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class = "trustee2">
+				<div class = "name">Bryan Hurlbut</div>
+					<div class = "profile2">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Trustee</li>
+							<li>Empire Realty Associates</li>
+							<li>(925) 383-5500</li>
+							<li><a href="mailto:bhurlbut@empirera.com">bhurlbut@empirera.com</a></li>
+						</ul>
+					</div>
+				</div>	
+				
+				
+				
+				<div class = "trustee">
+				<div class = "name">Long Nguyen</div>
+					<div class = "profile">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Trustee</li>
+							<li>Dudum Real Estate</li>
+							<li>(925) 876-7888</li>
+							<li><a href="mailto:long@go2long.com">long@go2long.com</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class = "trustee2">
+				<div class = "name">Bette Sue Schack</div>
+					<div class = "profile2">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Trustee</li>
+							<li>Sotheby's International</li>
+							<li>(925) 784-0429</li>
+							<li><a href="mailto:bettesueschack@msn.com">bettesueschack@msn.com</a></li>
+						</ul>
+					</div>
+				</div>	
+				
+				
+				
+				<div class = "trustee">
+				<div class = "name">Paul Zuvella</div>
+					<div class = "profile">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Trustee</li>
+							<li>Better Homes & Gardens</li>
+							<li>(925) 735-6084</li>
+							<li><a href="mailto:pzuvella@comcast.net">pzuvella@comcast.net</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class = "trustee2">
+				<div class = "name">Wendy Moore</div>
+					<div class = "profile2">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Trustee</li>
+							<li>Alain Pinel Realtors</li>
+							<li>(925) 570-5187</li>
+							<li><a href="mailto:wmoore@apr.com">wmoore@apr.com</a></li>
+						</ul>
+					</div>
+				</div>	
+				
+				
+				<div class = "trustee">
+				<div class = "name">Zach Cooper</div>
+					<div class = "profile">
+						<img src="WashU-pic.jpg">
+						<ul class = "otis">
+							<li>Affiliate Trustee</li>
+							<li>Home Street Bank</li>
+							<li>(925) 648-5244</li>
+							<li><a href="mailto:zackry.cooper@homestreet.com">zackry.cooper@homestreet.com</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="rights">
+		</div>
+	</div>
+</body>
