@@ -18,32 +18,31 @@
     		margin: 0;
     		height: 100px;
     		position: relative;
-    		background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		background: white;
     		z-index: 100;
     	}
     	
-    	#home {
+    	#home a{
     		padding: 35px 0 0 40px;
     		font-family: futura;
     		font-size: 1.3em;
-    		color: white;
+    		color: #08298A;
+    		text-decoration: none;
     		float: left;
     	}
     
 		#wrap {
 			width: 100%;
 			margin: 0;
-			height: 30px;
+			height: 31px;
 			z-index: 99;
 			position: relative;
-			background: #F5C50D;
+			background: #003366;
+			border-bottom: 2px solid #F5C50D;
 		}
 	
 		.navbar {
-			height: 30px;
+			height: 31px;
 			padding: 0 0 0 40px;
 			margin: 0;
 			position: absolute;
@@ -55,7 +54,7 @@
 			float: left;
 			text-align: center;
 			list-style: none;
-			font-family: futura;
+			font-family: helvetica;
 			font-size: 0.8em;
 			font-weight: bold;
 			padding: 0;
@@ -74,21 +73,16 @@
 		}
 		*/
 		
-		#home a {
-			color: white;
-			text-decoration: none;
-		}
-		
 		.navbar a {
-			padding: 7px 0;
+			padding: 8px 0;
 			text-decoration: none;
-			color: black;
+			color: white;
 			display: block;
 		}
 		
 		.navbar a:hover {
-			background-color: #08298A;
-			color: white;
+			color: #F5C50D;
+			background-color: #006699;
 		}
 		
 		.navbar li ul {
@@ -103,13 +97,13 @@
 		}
 		
 		.navbar li ul li {
-			background-color: #D8D8D8;
+			background-color: #006699;
 		}
 		
 		#wrap2 {
 			background-color: white;
 			width: 900px;
-			height: 575px;
+			height: 475px;
 			margin: 0 auto;
 		}
 		
@@ -121,7 +115,7 @@
 		
 		#main {
 			width: 800px;
-			height: 400px;
+			height: 300px;
 			top: 50px;
 			margin: 0 auto;
 			position: relative;
@@ -129,8 +123,9 @@
 		}
 		
 		#body-image {
-			background-color: yellow;
-			height: 400px;
+			background-image: url('images/CCARvertImage.jpg');
+			background-color: #D8D8D8;
+			height: 300px;
 			width: 200px;
 			float: left;
 			text-align: center;
@@ -173,11 +168,7 @@
 			bottom: 0;
 			position: relative;
 			margin-top: 30px;
-			background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
-    		border-top: 10px solid #F5C50D;
+			background: #002147;
 		}
 		
 		#rights {
@@ -211,6 +202,22 @@
 			display: inline;
 		}
 
+		#Facebook:hover {
+			content: url('images/Facebook.png');
+		}
+
+		#Twitter:hover {
+			content: url('images/Twitter.png');
+		}
+
+		#Instagram:hover {
+			content: url('images/Instagram.png');
+		}
+
+		#LinkedIn:hover {
+			content: url('images/LinkedIn.png');
+		}
+
     </style>    
 </head>
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
@@ -219,10 +226,10 @@
 		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
 		<div id="social-media-icons">
 			<ul>	
-				<li><img src="images/facebook.png" style="width:30px; height:30px;"/></li>
-				<li><img src="images/twitter.png" style="width:30px; height:30px;"/></li>
-				<li><img src="images/Instagram.png" style="width:30px; height:30px;"/></li>
-				<li><img src="images/LinkedIn.png" style="width:30px; height:30px;"/></li>
+				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
 			</ul>
 		</div>
 	</div>
@@ -248,7 +255,7 @@
 		<div id="body-title">CCAR Scholarship Foundation</div>
 		<div id="line"></div>
 		<div id="main">
-			<div id="body-image">Photo</div>
+			<div id="body-image"></div>
 			<div id="body">
 				<p>The CCAR Scholarship Foundation is dedicated to the rewarding task of raising funds to give to
 				deserving college students who live in the communities we serve. It is our way of giving back and
