@@ -25,11 +25,12 @@
     		z-index: 100;
     	}
     	
-    	#logo-bar div {
+    	#home {
     		padding: 35px 0 0 40px;
     		font-family: futura;
     		font-size: 1.3em;
     		color: white;
+    		float: left;
     	}
     
 		#wrap {
@@ -110,7 +111,6 @@
 			width: 900px;
 			height: 575px;
 			margin: 0 auto;
-			margin-top: 30px;
 		}
 		
 		.shadow {
@@ -190,18 +190,41 @@
 		}
 
 		#slider {
-			width: 100%;
-			margin: 0;
-			height: 400px;
+			width: 900px;
+			height: 471px;
+			margin: 0 auto;
+			background-image: url("images/CCARaward.jpg");
+			background-repeat:no-repeat;
+  			background-position: center center;
 			background-color: gray;
 		}
-		
+
+		#social-media-icons {
+			float: right;
+		}
+
+		#social-media-icons {
+			padding: 17px 30px 0 0;
+		}
+
+		#social-media-icons ul li {
+			display: inline;
+		}
+
     </style>    
 </head>
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div id = "home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
+		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
+		<div id="social-media-icons">
+			<ul>	
+				<li><img src="images/facebook.png" style="width:30px; height:30px;"/></li>
+				<li><img src="images/twitter.png" style="width:30px; height:30px;"/></li>
+				<li><img src="images/Instagram.png" style="width:30px; height:30px;"/></li>
+				<li><img src="images/LinkedIn.png" style="width:30px; height:30px;"/></li>
+			</ul>
+		</div>
 	</div>
 	<div id="wrap">
 		<ul class="navbar">
@@ -220,9 +243,7 @@
 			<li id="last"><a href="#">EVENTS</a></li>
 		</ul>
 	</div>
-	<div id="slider">
-		sample
-	</div>
+	<div id="slider"></div>
 	<div id="wrap2" class="shadow">
 		<div id="body-title">CCAR Scholarship Foundation</div>
 		<div id="line"></div>
