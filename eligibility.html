@@ -18,31 +18,31 @@
     		margin: 0;
     		height: 100px;
     		position: relative;
-    		background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		background: white;
     		z-index: 100;
     	}
     	
-    	#logo-bar div {
+    	#home a{
     		padding: 35px 0 0 40px;
     		font-family: futura;
     		font-size: 1.3em;
-    		color: white;
+    		color: #08298A;
+    		text-decoration: none;
+    		float: left;
     	}
     
 		#wrap {
 			width: 100%;
 			margin: 0;
-			height: 30px;
+			height: 31px;
 			z-index: 99;
 			position: relative;
-			background: #F5C50D;
+			background: #003366;
+			border-bottom: 2px solid #F5C50D;
 		}
 	
 		.navbar {
-			height: 30px;
+			height: 31px;
 			padding: 0 0 0 40px;
 			margin: 0;
 			position: absolute;
@@ -54,7 +54,7 @@
 			float: left;
 			text-align: center;
 			list-style: none;
-			font-family: futura;
+			font-family: helvetica;
 			font-size: 0.8em;
 			font-weight: bold;
 			padding: 0;
@@ -74,15 +74,15 @@
 		*/
 		
 		.navbar a {
-			padding: 7px 0;
+			padding: 8px 0;
 			text-decoration: none;
-			color: black;
+			color: white;
 			display: block;
 		}
 		
 		.navbar a:hover {
-			background-color: #08298A;
-			color: white;
+			color: #F5C50D;
+			background-color: #006699;
 		}
 		
 		.navbar li ul {
@@ -97,7 +97,7 @@
 		}
 		
 		.navbar li ul li {
-			background-color: #D8D8D8;
+			background-color: #006699;
 		}
 		
 		#wrap2 {
@@ -133,10 +133,10 @@
 		}
 		
 		#body-title {
-			font-family: futura;
+			font-family: candara;
 			font-weight: bold;
 			font-size: 2em;
-			color: #08298A;
+			color: #002147;
 			width: 800px;
 			top: 50px;
 			margin: 0 auto;
@@ -168,11 +168,7 @@
 			text-align: center;
 			bottom: 0;
 			margin-top: 30px;
-			background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
-    		border-top: 10px solid #F5C50D;
+			background: #002147;
 		}
 		
 		#rights {
@@ -185,7 +181,35 @@
 		}
 		
 		h3 {
-			color: #08298A;
+			color: #002147;
+		}
+
+		#social-media-icons {
+			float: right;
+		}
+
+		#social-media-icons {
+			padding: 17px 30px 0 0;
+		}
+
+		#social-media-icons ul li {
+			display: inline;
+		}
+
+		#Facebook:hover {
+			content: url('images/Facebook.png');
+		}
+
+		#Twitter:hover {
+			content: url('images/Twitter.png');
+		}
+
+		#Instagram:hover {
+			content: url('images/Instagram.png');
+		}
+
+		#LinkedIn:hover {
+			content: url('images/LinkedIn.png');
 		}
 		
     </style>    
@@ -193,7 +217,15 @@
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div>Contra Costa Association of Realtors</div>
+		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
+		<div id="social-media-icons">
+			<ul>	
+				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
+			</ul>
+		</div>
 	</div>
 	<div id="wrap">
 		<ul class="navbar">

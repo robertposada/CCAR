@@ -10,87 +10,102 @@
 </head>
 <body>
 	<form action="#" method="post">
-		<div>
-			<label for="first-name">First Name</label>
-			<input type="text" id="first-name" />
-		</div>
-		<div>
-			<label for="last-name">Last Name</label>
-			<input type="text" id="last-name" />
-		</div>
-		<div>
-			<label for="middle-initial">Middle Initial</label>
-			<input type="text" id="middle-initial" />
-		</div>
-		<div>
-			<label for="gender">Gender</label><br>
-			<input type="radio" name="gender" value="male">Male</input><br>
-			<input type="radio" name="gender" value="female">Female</input><br>
-		</div>
-		<div>
-			<label for="bday">Birth Date</label>
-			<input type="date" id="bday">
-		</div>
-		<div>
-			<label for="citizen">U.S. Citizen</label><br>
-			<input type="radio" name="citizen" value="yes">Yes</input><br>
-			<input type="radio" name="citizen" value="no">No</input><br>
-		</div>
-		<div>
-			<label for="home-phone">Home Phone</label>
-			<input type="tel" id="home-phone" />
-		</div>
-		<div>
-			<label for="cell-phone">Cell Phone</label>
-			<input type="tel" id="cell-phone" />
-		</div>
-		<div>
-			<label for="mail">Email</label>
-			<input type="email" id="mail" />
-		</div>
-		<div><h3>Home Address</h3></div>
-		<div>
-			<label for="address">Address</label>
-			<input type="text" id="address" />
-		</div>
-		<div>
-			<label for="city">City</label>
-			<input type="text" id="city" />
-		</div>
-		<div>
-			<label for="zip">Zip Code</label>
-			<input type="text" id="zip" />
-		</div>
-		<div><h3>Current School Address</h3></div>
-		<div>
-			<label for="address">Address</label>
-			<input type="text" id="address" />
-		</div>
-		<div>
-			<label for="city">City</label>
-			<input type="text" id="city" />
-		</div>
-		<div>
-			<label for="zip">Zip Code</label>
-			<input type="text" id="zip" />
-		</div>
-		<div><h3>School Address Next Fall</h3></div>
-		<div>
-			<label for="address">Address</label>
-			<input type="text" id="address" />
-		</div>
-		<div>
-			<label for="city">City</label>
-			<input type="text" id="city" />
-		</div>
-		<div>
-			<label for="zip">Zip Code</label>
-			<input type="text" id="zip" />
-		</div><br>
-		<div>
-			<h3>How did you first learn of the CCAR Scholarship program?</h3><br>
-			<textarea id=reasons></textarea>
-		</div>
+
+	First Name <input type="text" id="first-name" /><br>
+		
+	Last Name <input type="text" id="last-name" /><br>
+
+	Middle Initial <input type="text" id="middle-initial" /><br>
+
+	Gender<br><input type="radio" name="gender" value="male">Male</input><br>
+	<input type="radio" name="gender" value="female">Female</input><br><br>
+	
+	Birth Date <input type="date" id="bday" /><br>
+
+	U.S. Citizen<br><input type="radio" name="citizen" value="yes">Yes</input><br>
+	<input type="radio" name="citizen" value="no">No</input><br><br>
+
+	Home Phone <input type="tel" id="home-phone" /><br>
+
+	Cell Phone <input type="tel" id="cell-phone" /><br>
+
+	Email <input type="email" id="mail" /><br>
+
+	<h3>Home Address</h3>
+
+	Address <input type="text" id="address" /><br>
+
+	City <input type="text" id="city" /><br>
+
+	Zip Code <input type="text" id="zip" /><br>
+
+	<h3>Current School Address</h3>
+
+	Address <input type="text" id="address" /><br>
+
+	City <input type="text" id="city" /><br>
+	
+	Zip Code <input type="text" id="zip" /><br>
+
+	<h3>School Address Next Fall</h3>
+
+	Address <input type="text" id="address" /><br>
+
+	City <input type="text" id="city" /><br>
+
+	Zip Code <input type="text" id="zip" /><br>
+
+	<h3>How did you first learn of the CCAR Scholarship program?</h3>
+	<textarea id="reasons"></textarea>
+
+	<h3>Currently Enrolled College</h3>
+	School <input type="text" id="school1" />
+	Address <input type="text" id="address1" />
+	Dates Attended <input type="date" id="start1" />-<input type="date" id="end1" />
+
+	<h3>Previously College</h3>
+	School <input type="text" id="school1" />
+	Address <input type="text" id="address1" />
+	Dates Attended <input type="date" id="start1" />-<input type="date" id="end1" />
+
+	<h3>High School</h3>
+	School <input type="text" id="school1" />
+	Address <input type="text" id="address1" />
+	Dates Attended <input type="date" id="start1" />-<input type="date" id="end1" />
+
+	<h3>HOW ARE YOUR TUITION AND LIVING EXPENSES CURRENTLY PAID?</h3>
+	<input type="text" id="Family" />% Family
+	<input type="text" id="Part-Time-Work" />% Work
+	<input type="text" id="Scholarship" />% Scholarship
+	<input type="text" id="Other" />% Other
+
+	<h3>HONORS, AWARDS, OR SPECIAL ACHIEVEMENTS</h3>
+	<textarea id="honors"></textarea>
+
+	<h3>REAL ESTATE, FINANCE, OR BUSINESS COURSES YOU HAVE COMPLETED INCLUDING CLASS GRADES</h3>
+	<textarea id="past-courses"></textarea>
+
+	<h3>REAL ESTATE, FINANCE, OR BUSINESS COURSES IN WHICH YOU ARE CURRENTLY ENROLLED</h3>
+	<textarea id="current-courses"></textarea>
+
+	<h3>HONORARY AND PROFESSIONAL SOCIETIES</h3>
+	<textarea id="societies"></textarea>
+
+	<h3>CLUB MEMBERSHIPS</h3>
+	<textarea id="memberships"></textarea>
+
+	<h3>OFFICES HELD</h3>
+	<textarea id="offices"></textarea>
+
+	<h3>SPORTS</h3>
+	<textarea id="sports"></textarea>
+
+	<h3>FRATERNITY, SORORITY, OR OTHER ORGANIZATIONS</h3>
+	<textarea id="frats"></textarea>
+
+	<h3>WHAT ARE YOUR IMMEDIATE PLANS AFTER GRADUATION?</h3>
+	<textarea id="plans"></textarea>
+
 	</form>
 </body>
 </html>
