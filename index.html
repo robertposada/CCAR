@@ -39,7 +39,7 @@
 			z-index: 99;
 			position: relative;
 			background: #003366;
-			border-bottom: 2px solid #F5C50D;
+			border-bottom: 2px solid #D7BF00;
 		}
 	
 		.navbar {
@@ -61,19 +61,7 @@
 			padding: 0;
 			margin: 0;
 		}
-		
-		/*
-		.navbar #first {
-			border-left: 1px solid #DBA901;
-			border-right: 1px solid #DBA901;
-		}
-		
-		.navbar #last {
-			border-right: 1px solid #DBA901;
-			border-left: 1px solid #DBA901;
-		}
-		*/
-		
+
 		.navbar a {
 			padding: 8px 0;
 			text-decoration: none;
@@ -82,7 +70,7 @@
 		}
 		
 		.navbar a:hover {
-			color: #F5C50D;
+			color: #D7BF00;
 			background-color: #006699;
 		}
 		
@@ -103,8 +91,8 @@
 		
 		#wrap2 {
 			background-color: white;
-			width: 900px;
-			height: 475px;
+			width: 1000px;
+			height: 900px;
 			margin: 0 auto;
 		}
 		
@@ -115,8 +103,8 @@
 		}
 		
 		#main {
-			width: 800px;
-			height: 300px;
+			width: 900px;
+			height: 500px;
 			top: 50px;
 			margin: 0 auto;
 			position: relative;
@@ -126,7 +114,7 @@
 		#body-image {
 			background-image: url('images/CCARvertImage.jpg');
 			background-color: #D8D8D8;
-			height: 300px;
+			height: 500px;
 			width: 200px;
 			float: left;
 			text-align: center;
@@ -135,46 +123,55 @@
 		#body-title {
 			font-family: candara;
 			font-weight: bold;
-			font-size: 2em;
-			color: #002147;
-			width: 800px;
+			font-size: 1.75em;
+			color: #D7BF00;
+			width: 900px;
 			top: 50px;
+			position: relative;
 			margin: 0 auto;
 			padding-bottom: 10px;
-			position: relative;
 		}
 		
 		#line {
-		height: 20px;
-		width: 800px;
-		top: 50px;
-		margin: 0 auto;
-		position: relative;
-		border-top: 1px dotted #848484;
+			height: 20px;
+			width: 900px;
+			top: 50px;
+			margin: 0 auto;
+			position: relative;
+			border-top: 1px dotted #848484;
 		}
 		
-		#body {
+		#body-text {
 			font-family: candara;
-			font-size: 1.2em;
+			font-size: 1.1em;
 			position: relative;
 			margin: 0 20px 20px 220px;
 			padding: 20px;
 			color: #333;
+			text-align: justify;
+		}
+
+		#important-events {
+			font-family: candara;
+			font-size: 1.1em;
+			margin: 80px 0 0 50px;
 		}
 		
 		#footer {
-			height: 140px;
-			width: 100%;
+			height: 250px;
+			width: 1000px;
+			margin: 0 auto;
 			text-align: center;
 			bottom: 0;
-			position: relative;
 			margin-top: 30px;
+			position: relative;
 			background: #002147;
+		}
+
+		#address {
 		}
 		
 		#rights {
-			padding-top: 10px;
-			color: white;
 		}
 		
 		p {
@@ -182,13 +179,27 @@
 		}
 
 		#slider {
-			width: 900px;
-			height: 471px;
+			width: 1000px;
+			height: 523px;
 			margin: 0 auto;
 			background-image: url("images/CCARaward.jpg");
-			background-repeat:no-repeat;
-  			background-position: center center;
 			background-color: gray;
+		}
+
+		#slider-text {
+			width: 1000px;
+			height: 50px;
+			margin-top: 458px;
+			padding-top: 15px;
+			position: absolute;
+			opacity: 0.6;
+			background-color: #D7BF00;
+			text-align: center;
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #002147;
+
 		}
 
 		#social-media-icons {
@@ -196,7 +207,7 @@
 		}
 
 		#social-media-icons {
-			padding: 17px 30px 0 0;
+			padding: 18px 30px 0 0;
 		}
 
 		#social-media-icons ul li {
@@ -251,51 +262,32 @@
 			<li id="last"><a href="#">EVENTS</a></li>
 		</ul>
 	</div>
-	<div id="slider"></div>
+	<div id="slider" class="shadow">
+		<div id="slider-text">We love to support higher education.</div>
+	</div>
 	<div id="wrap2" class="shadow">
-		<div id="body-title">CCAR Scholarship Foundation</div>
+		<div id="body-title">Our Mission</div>
 		<div id="line"></div>
 		<div id="main">
 			<div id="body-image"></div>
-			<div id="body">
-				<p>The CCAR Scholarship Foundation is dedicated to the rewarding task of raising funds to give to
-				deserving college students who live in the communities we serve. It is our way of giving back and
-				assisting the next generation of business men and women.</p>
-				<div id="important-events">
-				<h2>Important Events</h2>
-				<ul>
-					<li>TBD: Application Due</li>
-					<li>TBD: Student Interviews</li>
-					<li>TBD: Award Luncheon</li>
-				</ul>
-				<!--
-				<table>
-					<tr>
-						<td>Date</td>
-						<td>Event</td>
-					</tr>
-					<tr>
-						<td>TBD</td>
-						<td>Application Due</td>
-					</tr>
-					<tr>
-						<td>TBD</td>
-						<td>Student Interviews</td>
-					</tr>
-					<tr>
-						<td>TBD</td>
-						<td>Award Luncheon</td>
-					</tr>
-				</table>
-				-->
+			<div id="body-text">
+				<p>The Contra Costa Association of Realtors® (CCAR) Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of REALTORS®' desire to make a difference! In the last five years alone, the Foundation has awarded nearly $250,000 in college grants to deserving students whose families reside in central Contra Costa County.</p>
+
+				<p>The Foundation receives its financial support directly from REALTORS®, industry Affiliate members and friends of the Contra Costa Association of REALTORS®.</p>
 			</div>
-			</div>
+		</div>
+		<div id="important-events">
+			<h3>Important Events</h3>
+			<ul>
+				<li>TBD: Application Due</li>
+				<li>TBD: Student Interviews</li>
+				<li>TBD: Award Luncheon</li>
+			</ul>
 		</div>
 	</div>
-	<div id="footer">
-		<div id="Address"></div>
-		<div id="rights">
-		</div>
+	<div id="footer" class="shadow">
+		<div id="address"></div>
+		<div id="rights"></div>
 	</div>
 </body>
 </html>
