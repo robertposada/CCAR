@@ -15,44 +15,51 @@
     	
     	#logo-bar {
     		width: 100%;
-    		margin: 0;
     		height: 100px;
-    		position: relative;
     		background: white;
     		border-top: 5px solid #003366;
-    		z-index: 100;
+    		z-index: 50;
+    	}
+
+    	#inner {
+    		width: 1000px;
+    		height: 200px;
+    		margin: 0 auto;
+    		padding: 0;
+    		z-index: 99;
+    	}
+
+    	#inner-wrap {
+    		height: 31px;
+    		width: 1000px;
+    		margin: 0 auto;
+    		z-index: 60;
     	}
     	
-    	#home a{
-    		padding: 35px 0 0 40px;
-    		font-family: futura;
-    		font-size: 1.3em;
-    		color: #08298A;
-    		text-decoration: none;
+    	#home a {
+    		width: 160px;
+    		height: 196px;
+    		margin-left: 25px;
     		float: left;
+    		z-index: 100;
+    		background-image: url('images/CCARlogo.png');
     	}
     
 		#wrap {
 			width: 100%;
-			margin: 0;
 			height: 31px;
-			z-index: 99;
-			position: relative;
 			background: #003366;
 			border-bottom: 2px solid #D7BF00;
 		}
-	
+
 		.navbar {
-			height: 31px;
-			padding: 0 0 0 40px;
 			margin: 0;
-			position: absolute;
-			text-align: center;
 		}
 		
 		.navbar li {
 			width: 150px;
-			float: left;
+			float: right;
+			padding-right: 40px;
 			text-align: center;
 			list-style: none;
 			font-family: helvetica;
@@ -226,10 +233,8 @@
 
 		#social-media-icons {
 			float: right;
-		}
-
-		#social-media-icons {
 			padding: 18px 30px 0 0;
+			margin: 0;
 		}
 
 		#social-media-icons ul li {
@@ -254,35 +259,38 @@
 
     </style>    
 </head>
-<!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
-		<div id="social-media-icons">
-			<ul>	
-				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
-			</ul>
+		<div id="inner">
+			<div id="home"><a href = "index.html"></a></div>
+			<div id="social-media-icons">
+				<ul>	
+					<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div id="wrap">
-		<ul class="navbar">
-			<li id="first"><a href="#">SCHOLARSHIP</a>
-				<ul>
-					<li><a href="#">ELIGIBILITY</a></li>
-					<li><a href="#">APPLICATION</a></li>
-				</ul>
-			</li>
-			<li><a href="foundation.html">FOUNDATION</a>
-				<ul>
-					<li><a href="contribution.html">CONTRIBUTION</a></li>
-					<li><a href="trustees.html">TRUSTEES</a></li>
-				</ul>
-			</li>
-			<li id="last"><a href="#">EVENTS</a></li>
-		</ul>
+		<div id="inner-wrap">
+			<ul class="navbar">
+				<li id="last"><a href="#">EVENTS</a></li>
+				<li><a href="foundation.html">FOUNDATION</a>
+					<ul>
+						<li><a href="contribution.html">CONTRIBUTION</a></li>
+						<li><a href="trustees.html">TRUSTEES</a></li>
+					</ul>
+				</li>
+				<li id="first"><a href="#">SCHOLARSHIP</a>
+					<ul>
+						<li><a href="#">ELIGIBILITY</a></li>
+						<li><a href="#">APPLICATION</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<div id="slider" class="shadow">
 		<div id="slider-text">We love to support higher education.</div>
