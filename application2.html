@@ -23,6 +23,21 @@
     		margin-top: 20px;
     		margin-bottom: 20px;
     	}
+
+    	h2 {
+    		text-align: center;
+    		font-family: candara;
+    		font-weight: bold;
+    	}
+
+    	h3 {
+
+    	}
+
+    	#line {
+    		height: 20px;
+    		border-top: 1px dotted gray;
+    	}
     </style>
 </head>
 <body>
@@ -31,6 +46,7 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2" id="emailForm">
 				<h2>CCAR Scholarship Application</h2>
+				<div id="line"></div>
 				<form method="post">
 					<div class="form-group">
 						<label for="first-name">First Name:</label>
@@ -45,13 +61,13 @@
 						<label for="gender">Gender:</label>
 						<div class="radio">
 							<label class="radio-inline">
-								<input type="radio" name="gridRadios" id="male" value="male" />Male
+								<input type="radio" name="genders" id="male" value="male" />Male
 							</label>
 							<label class="radio-inline">
-								<input type="radio" name="gridRadios" id="female" value="male" />Female
+								<input type="radio" name="genders" id="female" value="male" />Female
 							</label>
 							<label class="radio-inline">
-								<input type="radio" name="gridRadios" id="decline-to-state" value="male" />Decline to answer
+								<input type="radio" name="genders" id="decline-to-state" value="male" />Decline to answer
 							</label>
 						</div>
 
@@ -61,10 +77,10 @@
 				        <label for="citizen">U.S. Citizen:</label>
 						<div class="radio">
 							<label class="radio-inline">
-								<input type="radio" name="gridRadios" id="Yes" value="male" />Yes
+								<input type="radio" name="citizens" id="Yes" value="male" />Yes
 							</label>
 							<label class="radio-inline">
-								<input type="radio" name="gridRadios" id="No" value="male" />No
+								<input type="radio" name="citizens" id="No" value="male" />No
 							</label>
 						</div>
 
@@ -302,12 +318,79 @@
 						<input type="text" name="high-school" class="form-control" placeholder="School"/>
 						<label for="high-school-address">Address:</label>
 						<input type="text" name="high-school-address" class="form-control" placeholder="Address"/>
-						<label for="graduation">Graduation Date</label>
+						<label for="graduation">Graduation Date:</label>
 						<input type="date" name="graduation" class="form-control"/>
+
+						<label for="honors">Honors, awards, and/or special achievements:</label>
+						<textarea class="form-control" name="honors"></textarea>
+
+						<label for="past-courses">Real estate, finance, and/or business courses you have completed with grades:</label>
+						<textarea class="form-control" name="past-courses"></textarea>
+
+						<label for="current-courses">Real estate, finance, and/business courses in which you are currently enrolled:</label>
+						<textarea class="form-control" name="current-courses"></textarea>
+
+						<label for="societies">Honorary and/or professional societies:</label>
+						<textarea class="form-control" name="societies"></textarea>
+
+						<label for="sports">Sports and club memberships:</label>
+						<textarea class="form-control" name="sports"></textarea>
+
+						<label for="plans">What are your immediate plans after graduation?</label>
+						<textarea class="form-control" name="plans"></textarea>
+
+						<h3>Most recent or current employment</h3>
+						<label for="employer">Employer:</label>
+						<input type="text" name="employer" class="form-control" placeholder="Employer" />
+
+						<label for="supervisor">Supervisor:</label>
+						<input type="text" name="supervisor" class="form-control" placeholder="Supervisor" />
+
+						<label for="job-title">Job Title:</label>
+						<input type="text" name="job-title" class="form-control" placeholder="Job Title" />
+
+						<label for="duties">Specific Duties:</label>
+						<textarea class="form-control" name="duties"></textarea>
+
+						<div class="radio">
+							<label class="radio-inline">
+								<input type="radio" name="work-time" id="male" value="male" />Full time
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="work-time" id="female" value="male" />Part time
+							</label>
+						</div>
+
+						<label for="job-start">Date started:</label>
+						<input type="date" name="job-start" class="form-control"/>
+						<label for="job-end">Date ended:</label>
+						<input type="date" name="job-end" class="form-control"/>
+
+						<label for="reason-for-leaving">Reason for leaving:</label>
+						<textarea class="form-control" name="duties"></textarea>
+
+						<h3>Reference</h3>
+						<h5>(Reference to be a <b><i>faculty member</i></b> of your college)</h5>
+						<label for="ref-name">Name:</label>
+						<input type="text" name="ref-name" class="form-control" placeholder="Name" />
+
+						<label for="faculty-title">Faculty Title:</label>
+						<input type="text" name="faculty-title" class="form-control" placeholder="Faculty title" />
+
+						<label for="ref-phone">Phone:</label>
+						<input type="text" name="ref-phone" class="form-control" placeholder="Phone" />
+
+						<label for="ref-email">Email:</label>
+						<input type="email" name="ref-email" class="form-control" placeholder="email@example.com" />
+
+						<br>
+
+						<label for="essay">What are your reasons for pursuing a career in real estate, finance, or business? (Approx. 300 words)</label>
+						<textarea class="form-control" name="essay"></textarea>
 
 						<br><br>
 
-						<button type="submit" class="btn btn-default">Submit</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
 					</div>
 				</form>
 			</div>
