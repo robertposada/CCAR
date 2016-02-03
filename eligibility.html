@@ -15,43 +15,50 @@
     	
     	#logo-bar {
     		width: 100%;
-    		margin: 0;
     		height: 100px;
-    		position: relative;
     		background: white;
-    		z-index: 100;
+    		border-top: 5px solid #003366;
+    		z-index: 50;
+    	}
+
+    	#inner {
+    		width: 1000px;
+    		height: 200px;
+    		margin: 0 auto;
+    		padding: 0;
+    		z-index: 99;
+    	}
+
+    	#inner-wrap {
+    		height: 31px;
+    		width: 1000px;
+    		margin: 0 auto;
+    		z-index: 60;
     	}
     	
-    	#home a{
-    		padding: 35px 0 0 40px;
-    		font-family: futura;
-    		font-size: 1.3em;
-    		color: #08298A;
-    		text-decoration: none;
+    	#home a {
+    		width: 160px;
+    		height: 196px;
+    		margin-left: 25px;
     		float: left;
+    		z-index: 100;
+    		background-image: url('images/CCARlogo.png');
     	}
     
 		#wrap {
 			width: 100%;
-			margin: 0;
 			height: 31px;
-			z-index: 99;
-			position: relative;
 			background: #003366;
-			border-bottom: 2px solid #F5C50D;
+			border-bottom: 2px solid #D7BF00;
 		}
-	
+
 		.navbar {
-			height: 31px;
-			padding: 0 0 0 40px;
 			margin: 0;
-			position: absolute;
-			text-align: center;
 		}
 		
 		.navbar li {
 			width: 150px;
-			float: left;
+			float: right;
 			text-align: center;
 			list-style: none;
 			font-family: helvetica;
@@ -60,19 +67,7 @@
 			padding: 0;
 			margin: 0;
 		}
-		
-		/*
-		.navbar #first {
-			border-left: 1px solid #DBA901;
-			border-right: 1px solid #DBA901;
-		}
-		
-		.navbar #last {
-			border-right: 1px solid #DBA901;
-			border-left: 1px solid #DBA901;
-		}
-		*/
-		
+
 		.navbar a {
 			padding: 8px 0;
 			text-decoration: none;
@@ -81,7 +76,7 @@
 		}
 		
 		.navbar a:hover {
-			color: #F5C50D;
+			color: #D7BF00;
 			background-color: #006699;
 		}
 		
@@ -98,14 +93,14 @@
 		
 		.navbar li ul li {
 			background-color: #006699;
+			opacity: 0.75;
 		}
 		
 		#wrap2 {
 			background-color: white;
-			width: 900px;
-			height: 840px;
+			width: 1000px;
+			height: 900px;
 			margin: 0 auto;
-			margin-top: 30px;
 		}
 		
 		.shadow {
@@ -115,12 +110,14 @@
 		}
 		
 		#main {
-			width: 760px;
+			width: 910px;
 			top: 50px;
 			margin: 0 auto;
 			position: relative;
 			background: #F0F0F0;
 			font-family: candara;
+			font-size: 1.05em;
+			text-align: justify;
 			padding: 10px 20px 10px 20px;
 		}
 		
@@ -135,40 +132,58 @@
 		#body-title {
 			font-family: candara;
 			font-weight: bold;
-			font-size: 2em;
-			color: #002147;
-			width: 800px;
+			font-size: 1.75em;
+			color: #D7BF00;
+			width: 950px;
 			top: 50px;
+			clear: both;
+			position: relative;
 			margin: 0 auto;
 			padding-bottom: 10px;
-			position: relative;
+		}
+
+		h3 {
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.75em;
+			color: #D7BF00;
+			margin: 0;
+		}
+
+		h4 {
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.25em;
+			margin: 0;
+			color: #002147;
 		}
 		
 		#line {
 			height: 20px;
-			width: 800px;
+			width: 950px;
 			top: 50px;
 			margin: 0 auto;
 			position: relative;
 			border-top: 1px dotted #848484;
 		}
-		
-		#body {
-			font-family: Helvetica Neue;
-			font-size: 1em;
-			position: relative;
-			margin: 0 20px 20px 220px;
-			padding: 20px;
-			color: #333;
+
+		#scholarship {
+			font-family: candara;
+			font-size: 1.05em;
+			margin: 80px 25px 0 25px;
+			text-align: justify;
 		}
 		
 		#footer {
-			height: 140px;
-			width: 100%;
+			height: 150px;
+			width: 1000px;
+			margin: 0 auto;
 			text-align: center;
 			bottom: 0;
 			margin-top: 30px;
+			position: relative;
 			background: #002147;
+			border-top: 2px solid #D7BF00;
 		}
 		
 		#rights {
@@ -178,10 +193,6 @@
 		
 		p {
 			text-indent: 50px;
-		}
-		
-		h3 {
-			color: #002147;
 		}
 
 		#social-media-icons {
@@ -217,32 +228,36 @@
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
-		<div id="social-media-icons">
-			<ul>	
-				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
-			</ul>
+		<div id="inner">
+			<div id="home"><a href = "index.html"></a></div>
+			<div id="social-media-icons">
+				<ul>	
+					<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div id="wrap">
-		<ul class="navbar">
-			<li id="first"><a href="#">SCHOLARSHIP</a>
-				<ul>
-					<li><a href="#">ELIGIBILITY</a></li>
-					<li><a href="#">APPLICATION</a></li>
-				</ul>
-			</li>
-			<li><a href="#">FOUNDATION</a>
-				<ul>
-					<li><a href="#">CONTRIBUTION</a></li>
-					<li><a href="#">TRUSTEES</a></li>
-				</ul>
-			</li>
-			<li id="last"><a href="#">EVENTS</a></li>
-		</ul>
+		<div id="inner-wrap">
+			<ul class="navbar">
+				<li id="last"><a href="#">EVENTS</a></li>
+				<li><a href="foundation.html">FOUNDATION</a>
+					<ul>
+						<li><a href="contribution.html">CONTRIBUTION</a></li>
+						<li><a href="trustees.html">TRUSTEES</a></li>
+					</ul>
+				</li>
+				<li id="first"><a href="scholarship.html">SCHOLARSHIP</a>
+					<ul>
+						<li><a href="eligibility.html">ELIGIBILITY</a></li>
+						<li><a href="application.html">APPLICATION</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<div id="wrap2" class="shadow">
 		<div id="body-title">Eligibility</div>
@@ -251,7 +266,7 @@
 			<p>Scholarship candidates may be either undergraduates or graduate students. All
 			applicants must strictly comply with the application process and fully meet all of
 			the following requirements.</p>
-			<h3>Without exception, candidates must:</h3>
+			<h4>Without exception, candidates must:</h4>
 			<ol>
 				<li>Have already completed <strong>ONE YEAR</strong> of full-time college study; i.e., cannot be
 				an incoming freshman</li>
@@ -261,14 +276,16 @@
 				<li>Have a GPA (grade point average) of 3.0 or higher</li>
 				<li>Be a resident of Contra Costa County</li>
 			</ol>
-			<h3>Submit an application to include:</h3>
+			<h4>Submit an application to include:</h4>
 			<ul>
 				<li>Your most recent transcript</li>
 				<li>Letter of recommendation on school stationery from one of your instructors</li>
 				<li>A 300 word essay stating your reasons for pursuing a career in real estate, finance
 				and/or business</li>
 			</ul>
-			<h3>Scholarship Amount and Expectations:</h3>
+		</div>
+		<div id="scholarship">
+			<h4>Scholarship Amount and Expectations:</h4>
 			<p>Upon completing and submitting the written application requirements no later than (DATE),
 			each scholarship candidate is required to attend a personal interview in Walnut Creek, California
 			with the Foundation trustees. The interview will approximately take one hour and is an important
