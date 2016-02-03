@@ -13,36 +13,36 @@
     		background-color: #F0F0F0;
     	}
     	
+    	#body-title {
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.75em;
+			color: #D7BF00;
+			width: 950px;
+			top: 50px;
+			position: relative;
+			margin: 0 auto;
+			padding-bottom: 10px;
+		}
+    	
     	#logo-bar {
     		width: 100%;
     		margin: 0;
     		height: 100px;
     		position: relative;
-    		background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		background: white;
+    		border-top: 5px solid #003366;
     		z-index: 100;
     	}
     	
-    	#logo-bar div {
-    		padding: 35px 0 0 40px;
-    		font-family: Century Gothic;
-    		font-size: 1.3em;
-    		color: white;
-    	}
-    
-		#wrap {
-			width: 100%;
-			margin: 0;
-			height: 30px;
-			z-index: 99;
-			position: relative;
-			background: #F5C50D;
+    	.shadow {
+			-moz-box-shadow: 3px 3px 3px 0px #ccc;
+		  	-webkit-box-shadow: 3px 3px 3px 0px #ccc;
+		  	box-shadow: 3px 3px 3px 0px #ccc;
 		}
 	
 		.navbar {
-			height: 30px;
+			height: 31px;
 			padding: 0 0 0 40px;
 			margin: 0;
 			position: absolute;
@@ -54,7 +54,7 @@
 			float: left;
 			text-align: center;
 			list-style: none;
-			font-family: Century Gothic;
+			font-family: helvetica;
 			font-size: 0.8em;
 			font-weight: bold;
 			padding: 0;
@@ -74,20 +74,34 @@
 		*/
 		
 		#home a {
-			color: white;
-			text-decoration: none;
+			padding: 35px 0 0 40px;
+    		font-family: futura;
+    		font-size: 1.3em;
+    		color: #08298A;
+    		text-decoration: none;
+    		float: left;
+		}
+		
+		#wrap {
+			width: 100%;
+			margin: 0;
+			height: 31px;
+			z-index: 99;
+			position: relative;
+			background: #003366;
+			border-bottom: 2px solid #D7BF00;
 		}
 		
 		.navbar a {
-			padding: 7px 0;
+			padding: 8px 0;
 			text-decoration: none;
-			color: black;
+			color: white;
 			display: block;
 		}
 		
 		.navbar a:hover {
-			background-color: #08298A;
-			color: white;
+			color: #D7BF00;
+			background-color: #006699;
 		}
 		
 		.navbar li ul {
@@ -102,33 +116,47 @@
 		}
 		
 		.navbar li ul li {
-			background-color: #D8D8D8;
+			background-color: #006699;
+			opacity: 0.75;
 		}
 		
 		#wrap2 {
 			background-color: white;
-			width: 900px;
-			height: 1950px;
+			width: 1000px;
+			height: 2000px;
 			margin: 0 auto;
+		}
+		
+		.shadow {
+			-moz-box-shadow: 3px 3px 3px 0px #ccc;
+		  	-webkit-box-shadow: 3px 3px 3px 0px #ccc;
+		  	box-shadow: 3px 3px 3px 0px #ccc;
 		}
 		
 		#main {
-			width: 800px;
-			height: 1800px;
-			top: 100px;
+			width: 950px;
+			height: 1820px;
+			top: 50px;
 			margin: 0 auto;
 			position: relative;
 			background: #F0F0F0;
+			padding-top:20px;
 		}
 		
-		#motto {
-			font-family: Century Gothic;
-			font-weight: bold;
-			font-size: 2em;
-			color: #2E2E2E;
-			padding: 25px 0 25px 0;
-			text-align: center;
+		#line {
+			height: 20px;
+			width: 950px;
+			top: 50px;
+			margin: 0 auto;
+			position: relative;
+			border-top: 1px dotted #002147;
 		}
+
+		#line2 {
+			height: 5px;
+			border-bottom: 1px dotted #002147;
+		}
+		
 		
 		#body {
 			font-family: Helvetica Neue;
@@ -140,17 +168,22 @@
 		}
 		
 		#footer {
-			height: 140px;
-			width: 100%;
+			height: 150px;
+			width: 1000px;
+			margin: 0 auto;
 			text-align: center;
 			bottom: 0;
-			position: relative;
 			margin-top: 30px;
-			background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
-    		border-top: 10px solid #F5C50D;
+			position: relative;
+			background: #002147;
+			border-top: 2px solid #D7BF00;
+		}
+		
+		#copyright {
+			height: 50px;
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #D7BF00;
 		}
 		
 		#rights {
@@ -162,9 +195,38 @@
 			text-indent: 2px;
 		}
 		
+		#social-media-icons {
+			float: right;
+		}
+
+		#social-media-icons {
+			padding: 18px 30px 0 0;
+		}
+
+		#social-media-icons ul li {
+			display: inline;
+		}
+
+		#Facebook:hover {
+			content: url('images/Facebook.png');
+		}
+
+		#Twitter:hover {
+			content: url('images/Twitter.png');
+		}
+
+		#Instagram:hover {
+			content: url('images/Instagram.png');
+		}
+
+		#LinkedIn:hover {
+			content: url('images/LinkedIn.png');
+		}
+		
+		
 		.profile {
 			float:left;
-			width: 360px;
+			width: 430px;
  			height: 160px;
  			line-height: 0px;
  			color: transparent;
@@ -200,7 +262,7 @@
 		
 		.profile2 {
 			float:right;
-			width: 360px;
+			width: 430px;
  			height: 160px;
  			line-height: 0px;
  			color: transparent;
@@ -235,36 +297,32 @@
 		}
 		
 		.trustee {
-			width: 360px;
+			width: 430px;
 			height:200px;
 			padding:0;
 			margin-bottom: 25px;
-			background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+			background-color: #002147;
     		float:left;
 		}
 		
 		.trustee2 {
-			width: 360px;
+			width: 430px;
 			height:200px;
 			padding:0;
 			margin-bottom: 25px;
-			background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+			background-color: #002147;
+    		
     		float:right;
 		}
 		
 		.name {
-			width: 360px;
+			width: 430px;
 			height:40px;
 			font-size: 22px;
  			font-family: Century Gothic;
     		font-weight: 300;
-			background-color: #F5C50D;
+			background-color: #D7BF00;
+			
 			
 		}
 		
@@ -277,7 +335,15 @@
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div id = "home"><a href="index.html">Contra Costa Association of Realtors</a></div>
+		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
+		<div id="social-media-icons">
+			<ul>	
+				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
+			</ul>
+		</div>
 	</div>
 	<div id="wrap">
 		<ul class="navbar">
@@ -295,15 +361,17 @@
 			</li>
 			<li id="last"><a href="#">EVENTS</a></li>
 		</ul>
-	</div>
-	<div id="wrap2">
+	</div>	
+	
+	<div id="wrap2" class="shadow">
+		<div id="body-title">Meet the CCAR Scholarship Trustees</div>
+		<div id="line"></div>
 		<div id="main">
-			<div id="motto"><em>Meet the CCAR Scholarship Trustees</em></div>
 			<div id="body">
 				<div class = "trustee">
 				<div class = "name">Lynda Dimond</div>
 					<div class = "profile">
-						<img src="WashU-pic.jpg">
+						<img src="images/lynda.jpg">
 						<ul class = "otis">
 							<li>President</li>
 							<li>Keller Williams Realty</li>
@@ -317,7 +385,7 @@
 				<div class = "trustee2">
 				<div class = "name">Julie Del Santo</div>
 					<div class = "profile2">
-						<img src="WashU-pic.jpg">
+						<img src="images/julied.jpg">
 						<ul class = "otis">
 							<li>Vice President</li>
 							<li>Dadum Real Estate</li>
@@ -326,13 +394,11 @@
 						</ul>
 					</div>
 				</div>	
-			
-				
 				
 				<div class = "trustee">
 				<div class = "name">Julie Sullivan</div>
 					<div class = "profile">
-						<img src="WashU-pic.jpg">
+						<img src="images/juliesullivan.jpg">
 						<ul class = "otis">
 							<li>Secretary</li>
 							<li>(925) 200-3411</li>
@@ -359,7 +425,7 @@
 				<div class = "trustee">
 				<div class = "name">Marianne Bordogna</div>
 					<div class = "profile">
-						<img src="WashU-pic.jpg">
+						<img src="images/marianneb.jpg">
 						<ul class = "otis">
 							<li>Treasurer</li>
 							<li>Keller Williams Realty</li>
@@ -388,7 +454,7 @@
 				<div class = "trustee">
 				<div class = "name">Tom Hart</div>
 					<div class = "profile">
-						<img src="WashU-pic.jpg">
+						<img src="images/tomhart.jpg">
 						<ul class = "otis">
 							<li>Trustee</li>
 							<li>Empire Realty Associates</li>
@@ -417,7 +483,7 @@
 				<div class = "trustee">
 				<div class = "name">Long Nguyen</div>
 					<div class = "profile">
-						<img src="WashU-pic.jpg">
+						<img src="images/long.jpg">
 						<ul class = "otis">
 							<li>Trustee</li>
 							<li>Dudum Real Estate</li>
@@ -431,7 +497,7 @@
 				<div class = "trustee2">
 				<div class = "name">Bette Sue Schack</div>
 					<div class = "profile2">
-						<img src="WashU-pic.jpg">
+						<img src="images/bettesueschack.jpg">
 						<ul class = "otis">
 							<li>Trustee</li>
 							<li>Sotheby's International</li>
@@ -446,7 +512,7 @@
 				<div class = "trustee">
 				<div class = "name">Paul Zuvella</div>
 					<div class = "profile">
-						<img src="WashU-pic.jpg">
+						<img src="images/paulz.jpg">
 						<ul class = "otis">
 							<li>Trustee</li>
 							<li>Better Homes & Gardens</li>
@@ -460,7 +526,7 @@
 				<div class = "trustee2">
 				<div class = "name">Wendy Moore</div>
 					<div class = "profile2">
-						<img src="WashU-pic.jpg">
+						<img src="images/wendymoore.jpg">
 						<ul class = "otis">
 							<li>Trustee</li>
 							<li>Alain Pinel Realtors</li>
