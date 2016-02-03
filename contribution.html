@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>CCAR: Contributions</title>
+    <title>CCAR: Foundation Contributions</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,31 +18,23 @@
     		margin: 0;
     		height: 100px;
     		position: relative;
-    		background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		background: white;
+    		border-top: 5px solid #003366;
     		z-index: 100;
-    	}
-    	
-    	#logo-bar div {
-    		padding: 35px 0 0 40px;
-    		font-family: Century Gothic;
-    		font-size: 1.3em;
-    		color: white;
     	}
     
 		#wrap {
 			width: 100%;
 			margin: 0;
-			height: 30px;
+			height: 31px;
 			z-index: 99;
 			position: relative;
-			background: #F5C50D;
+			border-bottom: 2px solid #D7BF00;
+			background: #003366;
 		}
 	
 		.navbar {
-			height: 30px;
+			height: 31px;
 			padding: 0 0 0 40px;
 			margin: 0;
 			position: absolute;
@@ -54,7 +46,7 @@
 			float: left;
 			text-align: center;
 			list-style: none;
-			font-family: Century Gothic;
+			font-family: helvetica;
 			font-size: 0.8em;
 			font-weight: bold;
 			padding: 0;
@@ -74,20 +66,24 @@
 		*/
 		
 		#home a {
-			color: white;
-			text-decoration: none;
+			padding: 35px 0 0 40px;
+    		font-family: futura;
+    		font-size: 1.3em;
+    		color: #08298A;
+    		text-decoration: none;
+    		float: left;
 		}
 		
 		.navbar a {
-			padding: 7px 0;
+			padding: 8px 0;
 			text-decoration: none;
-			color: black;
+			color: white;
 			display: block;
 		}
 		
 		.navbar a:hover {
-			background-color: #08298A;
-			color: white;
+			color: #D7BF00;
+			background-color: #006699;
 		}
 		
 		.navbar li ul {
@@ -102,79 +98,196 @@
 		}
 		
 		.navbar li ul li {
-			background-color: #D8D8D8;
+			background-color: #006699;
+			opacity: 0.75;
 		}
 		
 		#wrap2 {
 			background-color: white;
-			width: 900px;
-			height: 2150px;
+			width: 1000px;
+			height: 1640px;
 			margin: 0 auto;
 		}
 		
+		.shadow {
+			-moz-box-shadow: 3px 3px 3px 0px #ccc;
+		  	-webkit-box-shadow: 3px 3px 3px 0px #ccc;
+		  	box-shadow: 3px 3px 3px 0px #ccc;
+		}
+		
 		#main {
-			width: 800px;
-			height: 2000px;
-			top: 100px;
+			width: 950px;
+			height: 670px;
+			top: 50px;
 			margin: 0 auto;
 			position: relative;
 			background: #F0F0F0;
 		}
 		
-		#body-image {
-			background-color: yellow;
-			height: 2000px;
-			width: 200px;
-			float: left;
-		}
 		
-		#motto {
-			font-family: Century Gothic;
+		#body-title {
+			font-family: candara;
 			font-weight: bold;
 			font-size: 1.75em;
-			color: #2E2E2E;
-			padding: 25px 0 10px 0;
-			text-align: center;
+			color: #D7BF00;
+			width: 950px;
+			top: 50px;
+			position: relative;
+			margin: 0 auto;
+			padding-bottom: 10px;
 		}
 		
-		#body {
-			font-family: Helvetica Neue;
-			font-size: 1em;
-			line-height: 175%;
+		h3 {
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.75em;
+			color: #D7BF00;
+			margin: 0;
+		}
+		
+		h4 {
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #D7BF00;
+			margin: 0;
+		}
+
+		#line {
+			height: 20px;
+			width: 950px;
+			top: 50px;
+			margin: 0 auto;
 			position: relative;
-			margin: 0 25px 25px 225px;
+			border-top: 1px dotted #002147;
+		}
+
+		#line2 {
+			height: 5px;
+			border-bottom: 1px dotted #002147;
+		}
+		
+		
+		#body-text {
+			font-family: candara;
+			font-size: 1.1em;
+			position: relative;
+			margin: 0 20px 20px 20px;
+			padding: 20px;
 			color: #333;
+			text-align: justify;
+		}
+		
+		#important-events {
+			font-family: candara;
+			font-size: 1.1em;
+			margin: 80px 0 0 50px;
 		}
 		
 		#footer {
-			height: 140px;
-			width: 100%;
+			height: 150px;
+			width: 1000px;
+			margin: 0 auto;
 			text-align: center;
 			bottom: 0;
-			position: relative;
 			margin-top: 30px;
-			background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
-    		border-top: 10px solid #F5C50D;
+			position: relative;
+			background: #002147;
+			border-top: 2px solid #D7BF00;
 		}
 		
+		#copyright {
+			height: 50px;
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #D7BF00;
+		}
+		
+		#address {
+		}
+
+		
 		#rights {
-			padding-top: 10px;
-			color: white;
+			
 		}
 		
 		p {
 			text-indent: 50px;
 		}
 		
+		
+
+		#slider-text {
+			width: 1000px;
+			height: 50px;
+			margin-top: 458px;
+			padding-top: 15px;
+			position: absolute;
+			opacity: 0.6;
+			background-color: #D7BF00;
+			text-align: center;
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #002147;
+
+		}
+
+		#social-media-icons {
+			float: right;
+		}
+
+		#social-media-icons {
+			padding: 18px 30px 0 0;
+		}
+
+		#social-media-icons ul li {
+			display: inline;
+		}
+
+		#Facebook:hover {
+			content: url('images/Facebook.png');
+		}
+
+		#Twitter:hover {
+			content: url('images/Twitter.png');
+		}
+
+		#Instagram:hover {
+			content: url('images/Instagram.png');
+		}
+
+		#LinkedIn:hover {
+			content: url('images/LinkedIn.png');
+		}
+		
+		#list1 {
+			margin:0 auto;
+			width:800px;
+			padding-top: 20px;
+		}
+		
+		
+		
+		
+		
+		
     </style>    
 </head>
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
+
+<!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div id = "home"><a href="index.html">Contra Costa Association of Realtors</a></div>
+		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
+		<div id="social-media-icons">
+			<ul>	
+				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
+			</ul>
+		</div>
 	</div>
 	<div id="wrap">
 		<ul class="navbar">
@@ -193,11 +306,12 @@
 			<li id="last"><a href="#">EVENTS</a></li>
 		</ul>
 	</div>
-	<div id="wrap2">
+	
+	<div id="wrap2" class="shadow">
+		<div id="body-title">Foundation Contributions</div>
+		<div id="line"></div>
 		<div id="main">
-			<div id="body-image">Jimbus</div>
-			<div id="motto"><em>Foundation Contribution</em></div>
-			<div id="body">
+			<div id="body-text">
 				<p>The CCAR Scholarship Foundation has awarded hundreds of thousands of dollars to deserving & needy college students since 1967. Helping to underwrite the costs of higher education for students from right here in central Contra Costa county is a great way to positively impact an individual, a family and our local community - truly a noble cause! In recent years, contributions from Realtors, Affiliate companies and friends of the Scholarship Foundation have allowed us to disburse record amounts of college grants; however, if the Foundation is to continue to award grants at the same level as in the past, we must graciously ask every one to dig deeper to support our work.</p>
 				<p>So, the Trustees of the CCAR Scholarship Foundation respectfully ask for your individual help in our quest to raise funds in 2015.</p>
 				<p>First, we simply want to make you aware of our scholarship program & the opportunity to contribute; the program is managed with integrity, audited for disbursement accuracy and with the exception of the annual scholarship luncheon & donor recognition event all monies are distributed directly to the students.</p>
@@ -205,17 +319,49 @@
 				<p>Lastly, this program will warm your heart. We respectfully offer you the chance to be involved at the root level of giving. You have the opportunity to become part of a synergistic group of people who make a difference. You will personally meet the students & parents and see for yourself what a difference your contributions will make. As the saying goes, 'that which is most personal … is most interesting.' What better way to satisfy your compelling need to help others.</p>
 				<p>Please consider this invitation to be our partner in success … with success defined as significantly impacting someone's life forever. If you have questions regarding any aspect of our scholarship program, please call on one of us. And thank you for the opportunity to share our passion!</p>
 			</div>
-			<div id="motto"><em>Levels of Contribution</em></div>
-			<ul>
-				<li>Honors at Entrance</li>
-				<li>Dean's List</li>
-				<li>Phi Beta Kappa</li>
-				<li>Summa Cum Laude</li>
-			</ul>
 		</div>
+		
+		<div id="important-events">
+			<h3>Levels of Contribution:</h3>
+			
+			
+			<div id="list1">
+				
+				<h4>"Honors at Entrance"</h4>
+				<p>A contribution of $100, $200, $300 up to $999 will be gratefully accepted. No contribution is too small and the Foundation is appreciative of each one. Your company or individual name will be highlighted at the Scholarship Awards Luncheon program. A donor of $500 or more in the 'Honors at Entrance' category will receive a personal invitation to the Foundation Awards Luncheon.</p>
+				
+			
+			</div>
+			
+			<div id="list1">
+			
+			<h4>"Dean's List"</h4>
+				<p>Contributors of $1,000 to $2,499 will be invited as guests of honor at the Foundation Awards Luncheon and will be given individual recognition. Your company or individual name will receive special 'Dean's List' mention in the scholarship program and you will be personally recognized for your significant contributions.</p>
+			
+			</div>
+			
+			<div id="list1">
+			
+			<h4>"Phi Beta Kappa"</h4>
+				<p>Contributors of $2,500 to $10,000 will be recognized for exemplary achievement in fostering higher education and will be distinguished guests at the Foundation Awards Luncheon. Honorable 'Phi Beta Kappa' mention in the Scholarship program will be provided and, whenever possible, the donor will personally present an award to a Scholarship recipient at the luncheon.</p>
+			
+			</div>
+			
+			
+			<div id="list1">
+			
+			<h4>"Summa Cum Laude"</h4>
+				<p>This is the highest and most revered level of contribution; an initial contributions of $1,000 or more each year accrues to a $15,000 principal amount over time. It is then designated as a 'perpetual' scholarship enabling an annual scholarship in the contributor's name granted solely from the interest generated from the principal. A 'Summa Cum Laude' perpetual scholarship establishes you as an ongoing partner in the CCAR Scholarship Foundation. You (or your designated person) remain a distinguished guest at the scholarship luncheon every year … with our unending gratitude.</p>
+			
+			</div>
+			
+			
+			
+		</div>
+		
 	</div>
-	<div id="footer">
-		<div id="rights">
-		</div>
+	<div id="footer" class="shadow">
+		<div id="address"></div>
 	</div>
 </body>
+</html>

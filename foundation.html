@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
 <head>
+
+	 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <title>CCAR: Foundation</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -18,31 +22,23 @@
     		margin: 0;
     		height: 100px;
     		position: relative;
-    		background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
+    		background: white;
+    		border-top: 5px solid #003366;
     		z-index: 100;
-    	}
-    	
-    	#logo-bar div {
-    		padding: 35px 0 0 40px;
-    		font-family: Century Gothic;
-    		font-size: 1.3em;
-    		color: white;
     	}
     
 		#wrap {
 			width: 100%;
 			margin: 0;
-			height: 30px;
+			height: 31px;
 			z-index: 99;
 			position: relative;
-			background: #F5C50D;
+			border-bottom: 2px solid #D7BF00;
+			background: #003366;
 		}
 	
 		.navbar {
-			height: 30px;
+			height: 31px;
 			padding: 0 0 0 40px;
 			margin: 0;
 			position: absolute;
@@ -54,7 +50,7 @@
 			float: left;
 			text-align: center;
 			list-style: none;
-			font-family: Century Gothic;
+			font-family: helvetica;
 			font-size: 0.8em;
 			font-weight: bold;
 			padding: 0;
@@ -74,20 +70,24 @@
 		*/
 		
 		#home a {
-			color: white;
-			text-decoration: none;
+			padding: 35px 0 0 40px;
+    		font-family: futura;
+    		font-size: 1.3em;
+    		color: #08298A;
+    		text-decoration: none;
+    		float: left;
 		}
 		
 		.navbar a {
-			padding: 7px 0;
+			padding: 8px 0;
 			text-decoration: none;
-			color: black;
+			color: white;
 			display: block;
 		}
 		
 		.navbar a:hover {
-			background-color: #08298A;
-			color: white;
+			color: #D7BF00;
+			background-color: #006699;
 		}
 		
 		.navbar li ul {
@@ -102,79 +102,199 @@
 		}
 		
 		.navbar li ul li {
-			background-color: #D8D8D8;
+			background-color: #006699;
+			opacity: 0.75;
 		}
 		
 		#wrap2 {
 			background-color: white;
-			width: 900px;
-			height: 1350px;
+			width: 1000px;
+			height: 1000px;
 			margin: 0 auto;
 		}
 		
+		.shadow {
+			-moz-box-shadow: 3px 3px 3px 0px #ccc;
+		  	-webkit-box-shadow: 3px 3px 3px 0px #ccc;
+		  	box-shadow: 3px 3px 3px 0px #ccc;
+		}
+		
 		#main {
-			width: 800px;
-			height: 1200px;
-			top: 100px;
+			width: 950px;
+			height: 430px;
+			top: 50px;
 			margin: 0 auto;
 			position: relative;
 			background: #F0F0F0;
 		}
 		
-		#body-image {
-			background-color: yellow;
-			height: 1200px;
-			width: 200px;
-			float: left;
-		}
 		
-		#motto {
-			font-family: Century Gothic;
+		#body-title {
+			font-family: candara;
 			font-weight: bold;
 			font-size: 1.75em;
-			color: #2E2E2E;
-			padding: 25px 0 10px 0;
-			text-align: center;
+			color: #D7BF00;
+			width: 950px;
+			top: 50px;
+			position: relative;
+			margin: 0 auto;
+			padding-bottom: 10px;
 		}
 		
-		#body {
-			font-family: Helvetica Neue;
-			font-size: 1em;
-			line-height: 175%;
+		h3 {
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.75em;
+			color: #D7BF00;
+			margin: 0;
+		}
+
+		#line {
+			height: 20px;
+			width: 950px;
+			top: 50px;
+			margin: 0 auto;
 			position: relative;
-			margin: 0 25px 25px 225px;
+			border-top: 1px dotted #002147;
+		}
+
+		#line2 {
+			height: 5px;
+			border-bottom: 1px dotted #002147;
+		}
+		
+		
+		#body-text {
+			font-family: candara;
+			font-size: 1.1em;
+			position: relative;
+			margin: 0 20px 20px 20px;
+			padding: 20px;
 			color: #333;
+			text-align: justify;
+		}
+		
+		#important-events {
+			font-family: candara;
+			font-size: 1.1em;
+			margin: 80px 0 0 50px;
 		}
 		
 		#footer {
-			height: 140px;
-			width: 100%;
+			height: 150px;
+			width: 1000px;
+			margin: 0 auto;
 			text-align: center;
 			bottom: 0;
-			position: relative;
 			margin-top: 30px;
-			background: #0B0B3B;
-    		background: -webkit-linear-gradient(#08298A, #0B0B3B);
-    		background: -o-linear-gradient(#08298A, #0B0B3B);
-    		background: -moz-linear-gradient(#08298A, #0B0B3B);
-    		border-top: 10px solid #F5C50D;
+			position: relative;
+			background: #002147;
+			border-top: 2px solid #D7BF00;
 		}
 		
+		#copyright {
+			height: 50px;
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #D7BF00;
+		}
+		
+		#address {
+		}
+
+		
 		#rights {
-			padding-top: 10px;
-			color: white;
+			
 		}
 		
 		p {
 			text-indent: 50px;
 		}
 		
+		
+
+		#slider-text {
+			width: 1000px;
+			height: 50px;
+			margin-top: 458px;
+			padding-top: 15px;
+			position: absolute;
+			opacity: 0.6;
+			background-color: #D7BF00;
+			text-align: center;
+			font-family: candara;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #002147;
+
+		}
+
+		#social-media-icons {
+			float: right;
+		}
+
+		#social-media-icons {
+			padding: 18px 30px 0 0;
+		}
+
+		#social-media-icons ul li {
+			display: inline;
+		}
+
+		#Facebook:hover {
+			content: url('images/Facebook.png');
+		}
+
+		#Twitter:hover {
+			content: url('images/Twitter.png');
+		}
+
+		#Instagram:hover {
+			content: url('images/Instagram.png');
+		}
+
+		#LinkedIn:hover {
+			content: url('images/LinkedIn.png');
+		}
+		
+		#list1 {
+			float: left;
+			
+			width:300px;
+			margin-right:20px;
+		}
+		
+		#list2 {
+			float: left;
+			margin:0;
+			width: 300px;
+			
+			
+		}
+		
+		#list3 {
+			float: left;
+			
+			width:300px;
+			margin:0;
+		}
+		
     </style>    
 </head>
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
+
+<!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div id = "home"><a href="index.html">Contra Costa Association of Realtors</a></div>
+		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
+		<div id="social-media-icons">
+			<ul>	
+				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
+			</ul>
+		</div>
 	</div>
 	<div id="wrap">
 		<ul class="navbar">
@@ -193,22 +313,85 @@
 			<li id="last"><a href="#">EVENTS</a></li>
 		</ul>
 	</div>
-	<div id="wrap2">
+	
+	<div id="wrap2" class="shadow">
+		<div id="body-title">Foundation</div>
+		<div id="line"></div>
 		<div id="main">
-			<div id="body-image">Jimbus</div>
-			<div id="motto"><em>CCAR Scholarship Foundation</em></div>
-			<div id="body">
+			<div id="body-text">
 				<p>The Contra Costa Association of Realtors® (CCAR) Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of REALTORS®' desire to make a difference! In the last five years alone, the Foundation has awarded nearly $250,000 in college grants to deserving students whose families reside in central Contra Costa County.
 The CCAR Scholarship Foundation was formed in 1967 and is a non-profit 501(c)(3) organization. It is administered by a governing board of fourteen Trustees; officers include a president, vice-president, treasurer and secretary.</p>
 				<p>The Foundation receives its financial support directly from REALTORS®, industry Affiliate members and friends of the Contra Costa Association of REALTORS®.</p>
-				<p>Students affiliated with the following prestigious colleges & universities have been scholarship recipients in recent years: Georgetown University, University of California - Berkeley, St. Mary's College, University of Southern California, Claremont McKenna College, Diablo Valley College, Sonoma State University, San Diego State University, Kingston University (London), University of Oregon, University of Maryland, UCLA, University of California – Davis, University of Denver, Whittier College, California State – East Bay, Loyola Marymount University, Hawaii Pacific University, Boston College, California Polytechnic State University, San Jose State University, Southern Methodist University, Seattle Pacific University, Harvard College, University of the Pacific, California State University - Sacramento, University of Arizona, Chapman University, Arizona State University, California State – Chico, Humboldt State University, University of California – Santa Barbara, John F. Kennedy University, University of Washington, Wake Forest University, University of Minnesota, University of Pennsylvania, New York University and the University of Tampa.</p>
 				<p>If you are a scholarship candidate, a parent of a prospective student or a counselor from an accredited college or university, we welcome you to our Foundation.</p>
 				<p>If you are a Realtor®, industry Affiliate or future contributor to our organization, we invite you to be a 'partner in our success', to be a member of the CCAR Scholarship Foundation family and to share in the incredibly gratifying experience of enabling higher education.</p>
 			</div>
 		</div>
-	</div>
-	<div id="footer">
-		<div id="rights">
+		<div id="important-events">
+			<h3>Our Scholarship Recipients Came From:</h3>
+			
+			
+			<div id="list1">
+			<ul>
+				<li>Georgetown University</li>
+				<li>University of California - Berkeley</li>
+				<li>St. Mary's College</li>
+				<li>University of Southern California</li>
+				<li>Claremont McKenna College</li>
+				<li>Diablo Valley College</li>
+				<li>Sonoma State University</li>
+				<li>San Diego State University</li>
+				<li>Kingston University (London)</li>
+				<li>University of Oregon</li>
+				<li>Humboldt State University</li>
+				<li>UCSB</li>
+				<li>John F. Kennedy University</li>
+			</ul>
+			</div>
+			
+			<div id="list2">
+			<ul>
+				<li>University of Maryland</li>
+				<li>UCLA</li>
+				<li>University of California – Davis</li>
+				<li> University of Denver</li>
+				<li>Whittier College</li>
+				<li>California State – East Bay</li>
+				<li>Loyola Marymount University</li>
+				<li>Hawaii Pacific University</li>
+				<li>Boston College</li>
+				<li>California Polytechnic State University</li>
+				<li>University of Washington</li>
+				<li>Wake Forest University</li>
+				
+				
+			</ul>
+			</div>
+			
+			<div id="list3">
+			<ul>
+				<li>San Jose State University</li>
+				<li>Southern Methodist University</li>
+				<li>Seattle Pacific University</li>
+				<li>Harvard College</li>
+				<li>University of the Pacific</li>
+				<li>California State - Sacramento</li>
+				<li>University of Arizona</li>
+				<li>Chapman University</li>
+				<li>Arizona State University</li>
+				<li>California State – Chico</li>
+				<li>University of Pennsylvania</li>
+				<li>New York University</li>
+				<li>University of Minnesota</li>
+			</ul>
+			</div>
+			
+			
+			
+			
 		</div>
 	</div>
+	<div id="footer" class="shadow">
+		<div id="address"></div>
+	</div>
 </body>
+</html>
