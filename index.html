@@ -105,7 +105,7 @@
 		#wrap2 {
 			background-color: white;
 			width: 1000px;
-			height: 920px;
+			height: 870px;
 			margin: 0 auto;
 		}
 		
@@ -178,41 +178,67 @@
 		}
 
 		#application-info {
-			height: 240px;
-			width: 290px;
-			font-family: candara;
+			height: 200px;
+			width: 300px;
 			float: left;
 			margin: 75px 0 0 25px;
-			text-align: center;
-			border: 5px solid #D7BF00;
+			background-color: #FFCB05;
 		}
 
 		#foundation-info {
-			height: 240px;
-			width: 290px;
-			font-family: candara;
+			height: 200px;
+			width: 300px;
 			float: left;
 			margin: 75px 0 0 25px;
-			text-align: center;
-			border: 5px solid #D7BF00;
+			background-color: #A4A4A4;
 		}
 
 		#dates-deadlines {
-			height: 240px;
-			width: 290px;
-			font-family: candara;
+			height: 200px;
+			width: 300px;
 			float: left;
 			margin: 75px 0 0 25px;
-			text-align: center;
-			border: 5px solid #D7BF00;
+			background-color: #006699;
 		}
 
 		.box-title {
+			font-family: candara;
+			text-align: center;
 			font-size: 1.35em;
 			font-weight: bold;
-			background-color: #BDBDBD;
+			border-bottom: 1px dotted #002147;
 			padding-top: 15px;
 			height: 40px;
+			width: 270px;
+			margin: 0 auto;
+		}
+
+		.box-text {
+			height: 129px;
+			width: 270px;
+			font-family: candara;
+			text-align: left;
+			padding: 15px 15px 0 15px;
+		}
+
+		.button {
+			display: block;
+			height: 30px;
+			width: 230px;
+			border: 1px solid white;
+			padding: 5px 0 0 10px;
+			font-weight: bold;
+			margin: 0 auto;
+			margin-top: 10px;
+			color: #002147;
+		}
+
+		a.button {
+			text-decoration: none;
+		}
+
+		a.button:hover {
+			background-color: #FFDF68;
 		}
 		
 		#footer {
@@ -364,13 +390,15 @@
 		</div>
 		<div id="application-info" class="shadow">
 			<div class="box-title">The Scholarship</div>
-			<br>
-			Find out more about the scholarship, eligibility, and what you need to submit with your application.
+			<div class="box-text">
+			Find out more about the scholarship, eligibility, and what you need to submit with your application.<br>
+			<a href="eligibility.html" class="button">Scholarship eligibility</a>
+			</div>
 		</div>
 		<div id="foundation-info" class="shadow">
 			<div class="box-title">The Foundation</div>
-			<br>
-			Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees
+			<div class="box-text">
+			Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees.</div>
 		</div>
 		<div id="dates-deadlines" class="shadow">
 			<div class="box-title">Dates & Deadlines</div>
