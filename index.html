@@ -199,12 +199,12 @@
 			width: 300px;
 			float: left;
 			margin: 75px 25px 0 25px;
-			background-color: #084B8A;
+			background-color: #006699;
 		}
 
 		.box-title {
 			font-family: 'Ubuntu';
-			font-size: 1.35em;
+			font-size: 1.30em;
 			font-weight: bold;
 			color: #002147;
 			text-align: center;
@@ -217,7 +217,7 @@
 
 		#date-title {
 			font-family: 'Ubuntu';
-			font-size: 1.35em;
+			font-size: 1.3em;
 			font-weight: bold;
 			color: white;
 			text-align: center;
@@ -228,9 +228,20 @@
 			margin: 0 auto;
 		}
 
-		#date-text {
+		#date-table {
 			font-family: 'Ubuntu';
 			color: white;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table, td {
+			border: 1px solid #ddd;
+			padding: 5px;
 		}
 
 		.box-text {
@@ -290,7 +301,7 @@
 		}
 		
 		#footer {
-			height: 150px;
+			height: 170px;
 			width: 1000px;
 			margin: 0 auto;
 			text-align: center;
@@ -301,11 +312,17 @@
 			border-top: 2px solid #D7BF00;
 		}
 
-		#copyright {
-			height: 50px;
-			width: 1000px;
+		#rights {
+			height: 20px;
+			width: 980px;
 			margin: 0 auto;
-			background-color: #D7BF00;
+			margin-top: 150px;
+			background-color: #1C1C1C;
+			font-family: Arial;
+			font-size: 0.7em;
+			color: white;
+			padding: 4px 0 0 20px;
+			text-align: left;
 		}
 
 		#address {
@@ -446,16 +463,29 @@
 		</div>
 		<div id="dates-deadlines">
 			<div id="date-title">Dates & Deadlines</div>
-			<ul id="date-text">
-				<li>03/01/2016: Application portal opens
-				<li>04/30/2016: Applications due</li>
-				<li>06/10/2016: Student interviews</li>
-				<li>07/8/2016: Award luncheon</li>
-			</ul>
+			<table id="date-table">
+				<tr>
+					<td>3/1/2016</td>
+					<td>Application opens</td>
+				</tr>
+				<tr>
+					<td>4/30/2016</td>
+					<td>Application due</li>
+				</tr>
+				<tr>
+					<td>6/10/2016</td>
+					<td>Student interviews</td>
+				</tr>
+				<tr>
+					<td>7/8/2016</td>
+					<td>Award luncheon</td>
+				</tr>
+			</table>
 		</div>
 	</div>
 	<div id="footer" class="shadow">
 		<div id="address">Contra Costa Association of Realtors®<br>1870 Olympic Blvd., Suite 200, Walnut Creek, CA 94596<br><br>Phone: (925) 295-1270<br>Fax: (925) 938-1294</div>
+		<div id="rights"><i>© 2016 CCAR Scholarship Foundation</i></div>
 	</div>
 </body>
 </html>
