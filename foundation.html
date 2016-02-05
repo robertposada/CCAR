@@ -9,6 +9,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
     <style type="text/css">
     
     	body {
@@ -19,35 +21,50 @@
     	
     	#logo-bar {
     		width: 100%;
-    		margin: 0;
     		height: 100px;
-    		position: relative;
     		background: white;
     		border-top: 5px solid #003366;
+    		z-index: 50;
+    	}
+
+    	#inner {
+    		width: 1000px;
+    		height: 200px;
+    		margin: 0 auto;
+    		padding: 0;
+    		z-index: 99;
+    	}
+
+    	#inner-wrap {
+    		height: 31px;
+    		width: 1000px;
+    		margin: 0 auto;
+    		z-index: 60;
+    	}
+    	
+    	#home a {
+    		width: 160px;
+    		height: 196px;
+    		margin-left: 25px;
+    		float: left;
     		z-index: 100;
+    		background-image: url('images/CCARlogo.png');
     	}
     
 		#wrap {
 			width: 100%;
-			margin: 0;
 			height: 31px;
-			z-index: 99;
-			position: relative;
-			border-bottom: 2px solid #D7BF00;
 			background: #003366;
+			border-bottom: 2px solid #D7BF00;
 		}
-	
+
 		.navbar {
-			height: 31px;
-			padding: 0 0 0 40px;
 			margin: 0;
-			position: absolute;
-			text-align: center;
 		}
 		
 		.navbar li {
 			width: 150px;
-			float: left;
+			float: right;
 			text-align: center;
 			list-style: none;
 			font-family: helvetica;
@@ -56,28 +73,7 @@
 			padding: 0;
 			margin: 0;
 		}
-		
-		/*
-		.navbar #first {
-			border-left: 1px solid #DBA901;
-			border-right: 1px solid #DBA901;
-		}
-		
-		.navbar #last {
-			border-right: 1px solid #DBA901;
-			border-left: 1px solid #DBA901;
-		}
-		*/
-		
-		#home a {
-			padding: 35px 0 0 40px;
-    		font-family: futura;
-    		font-size: 1.3em;
-    		color: #08298A;
-    		text-decoration: none;
-    		float: left;
-		}
-		
+
 		.navbar a {
 			padding: 8px 0;
 			text-decoration: none;
@@ -121,7 +117,7 @@
 		
 		#main {
 			width: 950px;
-			height: 430px;
+			height: 340px;
 			top: 50px;
 			margin: 0 auto;
 			position: relative;
@@ -130,7 +126,7 @@
 		
 		
 		#body-title {
-			font-family: candara;
+			font-family: 'Ubuntu';
 			font-weight: bold;
 			font-size: 1.75em;
 			color: #D7BF00;
@@ -139,10 +135,11 @@
 			position: relative;
 			margin: 0 auto;
 			padding-bottom: 10px;
+			clear:both;
 		}
 		
 		h3 {
-			font-family: candara;
+			font-family: 'Ubuntu';
 			font-weight: bold;
 			font-size: 1.75em;
 			color: #D7BF00;
@@ -165,7 +162,7 @@
 		
 		
 		#body-text {
-			font-family: candara;
+			font-family: 'Ubuntu';
 			font-size: 1.1em;
 			position: relative;
 			margin: 0 20px 20px 20px;
@@ -175,7 +172,7 @@
 		}
 		
 		#important-events {
-			font-family: candara;
+			font-family: 'Ubuntu';
 			font-size: 1.1em;
 			margin: 80px 0 0 50px;
 		}
@@ -199,12 +196,24 @@
 			background-color: #D7BF00;
 		}
 		
-		#address {
+		#footer-logo {
+			height: 70px;
+			width: 100px;
+			float: left;
+			margin: 40px 0 0 100px;
 		}
 
-		
-		#rights {
-			
+		#address {
+			height: 80px;
+			width: 190px;
+			padding: 20px 20px 20px 0;
+			font-family: Arial;
+			font-size: 0.7em;
+			color: white;
+			float: left;
+			text-align: left;
+			margin: 15px 0 0 0;
+			border-right: 1px solid #CBCBCB;
 		}
 		
 		p {
@@ -286,32 +295,36 @@
 <!-- Eligibility, Application, The Foundation, Foundation Contribution, Trustees, Upcoming Events -->
 <body>
 	<div id="logo-bar">
-		<div id="home"><a href = "index.html">Contra Costa Association of Realtors</a></div>
-		<div id="social-media-icons">
-			<ul>	
-				<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
-				<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
-			</ul>
+		<div id="inner">
+			<div id="home"><a href = "index.html"></a></div>
+			<div id="social-media-icons">
+				<ul>	
+					<li><a href="#" target="_blank"><img src="images/FacebookG.png" id="Facebook" alt="Facebook" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/TwitterG.png" id="Twitter" alt="Twitter" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/InstagramG.png" id="Instagram" alt="Instagram" style="width:30px; height:30px;"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/LinkedInG.png" id="LinkedIn" alt="LinkedIn" style="width:30px; height:30px;"/></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div id="wrap">
-		<ul class="navbar">
-			<li id="first"><a href="#">SCHOLARSHIP</a>
-				<ul>
-					<li><a href="#">ELIGIBILITY</a></li>
-					<li><a href="#">APPLICATION</a></li>
-				</ul>
-			</li>
-			<li><a href="foundation.html">FOUNDATION</a>
-				<ul>
-					<li><a href="contribution.html">CONTRIBUTION</a></li>
-					<li><a href="trustees.html">TRUSTEES</a></li>
-				</ul>
-			</li>
-			<li id="last"><a href="#">EVENTS</a></li>
-		</ul>
+		<div id="inner-wrap">
+			<ul class="navbar">
+				<li id="last"><a href="#">EVENTS</a></li>
+				<li><a href="foundation.html">FOUNDATION</a>
+					<ul>
+						<li><a href="contribution.html">CONTRIBUTION</a></li>
+						<li><a href="trustees.html">TRUSTEES</a></li>
+					</ul>
+				</li>
+				<li id="first"><a href="#">SCHOLARSHIP</a>
+					<ul>
+						<li><a href="eligibility.html">ELIGIBILITY</a></li>
+						<li><a href="application.html">APPLICATION</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 	
 	<div id="wrap2" class="shadow">
@@ -321,9 +334,9 @@
 			<div id="body-text">
 				<p>The Contra Costa Association of Realtors® (CCAR) Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of REALTORS®' desire to make a difference! In the last five years alone, the Foundation has awarded nearly $250,000 in college grants to deserving students whose families reside in central Contra Costa County.
 The CCAR Scholarship Foundation was formed in 1967 and is a non-profit 501(c)(3) organization. It is administered by a governing board of fourteen Trustees; officers include a president, vice-president, treasurer and secretary.</p>
-				<p>The Foundation receives its financial support directly from REALTORS®, industry Affiliate members and friends of the Contra Costa Association of REALTORS®.</p>
-				<p>If you are a scholarship candidate, a parent of a prospective student or a counselor from an accredited college or university, we welcome you to our Foundation.</p>
-				<p>If you are a Realtor®, industry Affiliate or future contributor to our organization, we invite you to be a 'partner in our success', to be a member of the CCAR Scholarship Foundation family and to share in the incredibly gratifying experience of enabling higher education.</p>
+				<p>The Foundation receives its financial support directly from REALTORS®, industry Affiliate members and friends of the Contra Costa Association of REALTORS®.
+				If you are a scholarship candidate, a parent of a prospective student or a counselor from an accredited college or university, we welcome you to our Foundation.
+				If you are a Realtor®, industry Affiliate or future contributor to our organization, we invite you to be a 'partner in our success', to be a member of the CCAR Scholarship Foundation family and to share in the incredibly gratifying experience of enabling higher education.</p>
 			</div>
 		</div>
 		<div id="important-events">
@@ -333,9 +346,9 @@ The CCAR Scholarship Foundation was formed in 1967 and is a non-profit 501(c)(3)
 			<div id="list1">
 			<ul>
 				<li>Georgetown University</li>
-				<li>University of California - Berkeley</li>
+				<li>UC Berkeley</li>
 				<li>St. Mary's College</li>
-				<li>University of Southern California</li>
+				<li>USC</li>
 				<li>Claremont McKenna College</li>
 				<li>Diablo Valley College</li>
 				<li>Sonoma State University</li>
@@ -353,7 +366,7 @@ The CCAR Scholarship Foundation was formed in 1967 and is a non-profit 501(c)(3)
 				<li>University of Maryland</li>
 				<li>UCLA</li>
 				<li>University of California – Davis</li>
-				<li> University of Denver</li>
+				<li>University of Denver</li>
 				<li>Whittier College</li>
 				<li>California State – East Bay</li>
 				<li>Loyola Marymount University</li>
@@ -391,7 +404,8 @@ The CCAR Scholarship Foundation was formed in 1967 and is a non-profit 501(c)(3)
 		</div>
 	</div>
 	<div id="footer" class="shadow">
-		<div id="address"></div>
+		<div id="footer-logo"></div>
+		<div id="address">Contra Costa Association of Realtors®<br>1870 Olympic Blvd., Suite 200, Walnut Creek, CA 94596<br><br>Phone: (925) 295-1270<br>Fax: (925) 938-1294</div>
 	</div>
 </body>
 </html>
