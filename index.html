@@ -199,7 +199,7 @@
 			width: 300px;
 			float: left;
 			margin: 75px 25px 0 25px;
-			background-color: #006699;
+			background-color: #084B8A;
 		}
 
 		.box-title {
@@ -208,7 +208,7 @@
 			font-weight: bold;
 			color: #002147;
 			text-align: center;
-			border-bottom: 1px dotted #002147;
+			border-bottom: 1px solid #002147;
 			padding-top: 15px;
 			height: 40px;
 			width: 270px;
@@ -221,7 +221,7 @@
 			font-weight: bold;
 			color: white;
 			text-align: center;
-			border-bottom: 1px dotted #002147;
+			border-bottom: 1px solid white;
 			padding-top: 15px;
 			height: 40px;
 			width: 270px;
@@ -280,6 +280,14 @@
 		a#button2:hover {
 			background-color: #CBCBCB;
 		}
+
+		.arrow {
+			height: 35px;
+			width: 35px;
+			background-image: url('images/SideArrow.png');
+			float: right;
+			margin: -7px 5px 0 0;
+		}
 		
 		#footer {
 			height: 150px;
@@ -300,17 +308,10 @@
 			background-color: #D7BF00;
 		}
 
-		#footer-logo {
-			height: 70px;
-			width: 100px;
-			float: left;
-			margin: 40px 0 0 100px;
-		}
-
 		#address {
 			height: 80px;
 			width: 190px;
-			padding: 20px 20px 20px 0;
+			padding: 20px 20px 20px 20px;
 			font-family: Arial;
 			font-size: 0.7em;
 			color: white;
@@ -433,14 +434,14 @@
 			<div class="box-title">The Scholarship</div>
 			<div class="box-text">
 			Find out more about the scholarship, eligibility, and what you need to submit with your application.<br>
-				<a href="eligibility.html" id="button">Scholarship eligibility</a>
+				<a href="eligibility.html" id="button">Scholarship eligibility<div class="arrow"></div></a>
 			</div>
 		</div>
 		<div id="foundation-info">
 			<div class="box-title">The Foundation</div>
 			<div class="box-text">
 			Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees.
-				<a href="foundation.html" id="button2">About us</a>
+				<a href="foundation.html" id="button2">About us<div class="arrow"></div></a>
 			</div>
 		</div>
 		<div id="dates-deadlines">
@@ -454,7 +455,6 @@
 		</div>
 	</div>
 	<div id="footer" class="shadow">
-		<div id="footer-logo"></div>
 		<div id="address">Contra Costa Association of Realtors®<br>1870 Olympic Blvd., Suite 200, Walnut Creek, CA 94596<br><br>Phone: (925) 295-1270<br>Fax: (925) 938-1294</div>
 	</div>
 </body>
