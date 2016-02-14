@@ -1,3 +1,32 @@
+<?php
+
+	session_start();
+	include("connection.php");
+	echo $_SESSION['id'];
+
+	if ($_POST["submit"]) {
+		$result = '<div class="alert alert-success">Form submitted</div>';
+		if (!$_POST['essay']) {
+			$error = "<br />Please complete the required essay";
+		}
+		if ($error) {
+			$result = '<div class="alert alert-danger"></strong>There were error(s) in your application</strong>'.$error.'</div>';
+		}
+		else {
+			if (mysqli_connect_error()) {
+				die("Could not connect to database");
+			};
+			//do something to database
+			$query = "INSERT INTO `essay` (`essay`) VALUES(''". $_POST['essay'] ."')";
+			
+			mysqli_query($link, $query);
+			
+		}
+	
+	}
+
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -30,10 +59,6 @@
     		font-weight: bold;
     	}
 
-    	h3 {
-
-    	}
-
     	#line {
     		height: 20px;
     		border-top: 1px dotted gray;
@@ -48,17 +73,19 @@
 				<h2>CCAR Scholarship Application</h2>
 				<div id="line"></div>
 				
+				<?php echo $result; ?>
+
 				<form method="post">
 					<div class="form-group">
 					
 						<h3>Essay</h3>
 
 						<label for="essay">What are your reasons for pursuing a career in real estate, finance, or business? (Approx. 300 words)</label>
-						<textarea class="form-control" name="essay"></textarea>
+						<textarea class="form-control" name="essay"><?php echo $_POST['essay']; ?></textarea>
 
 						<br><br>
 
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button name="submit" value="submit" type="submit" class="btn btn-primary">Submit</button>
 					</div>
 				</form>
 			</div>
