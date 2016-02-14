@@ -126,10 +126,10 @@
 		}
 		
 		#body-image {
-			background-image: url('images/CCARvertImage.jpg');
+			background-image: url('images/CCARvertical.jpg');
 			background-color: #D8D8D8;
 			height: 400px;
-			width: 200px;
+			width: 196px;
 			float: left;
 			text-align: center;
 		}
@@ -183,6 +183,7 @@
 			width: 300px;
 			float: left;
 			margin: 75px 0 0 25px;
+			font-size: 0.9em;
 			background-color: #FFCB05;
 		}
 
@@ -191,6 +192,7 @@
 			width: 300px;
 			float: left;
 			margin: 75px 0 0 25px;
+			font-size: 0.9em;
 			background-color: #A4A4A4;
 		}
 
@@ -204,11 +206,11 @@
 
 		.box-title {
 			font-family: 'Ubuntu';
-			font-size: 1.35em;
+			font-size: 1.30em;
 			font-weight: bold;
 			color: #002147;
 			text-align: center;
-			border-bottom: 1px dotted #002147;
+			border-bottom: 1px solid #002147;
 			padding-top: 15px;
 			height: 40px;
 			width: 270px;
@@ -217,27 +219,39 @@
 
 		#date-title {
 			font-family: 'Ubuntu';
-			font-size: 1.35em;
+			font-size: 1.3em;
 			font-weight: bold;
 			color: white;
 			text-align: center;
-			border-bottom: 1px dotted #002147;
+			border-bottom: 1px solid gray;
 			padding-top: 15px;
 			height: 40px;
 			width: 270px;
 			margin: 0 auto;
 		}
 
-		#date-text {
+		#date-table {
 			font-family: 'Ubuntu';
+			font-size: 0.9em;
 			color: white;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table, td {
+			border: 1px solid #ddd;
+			padding: 5px;
 		}
 
 		.box-text {
 			height: 129px;
 			width: 270px;
 			font-family: 'Ubuntu';
-			text-align: left;
+			text-align: center;
 			padding: 15px 15px 0 15px;
 		}
 
@@ -246,10 +260,11 @@
 			height: 28px;
 			width: 230px;
 			border: 1px solid white;
+			text-align: left;
 			padding: 7px 0 0 10px;
 			font-weight: bold;
 			margin: 0 auto;
-			margin-top: 10px;
+			margin-top: 15px;
 			color: #002147;
 		}
 
@@ -265,11 +280,12 @@
 			display: block;
 			height: 28px;
 			width: 230px;
+			text-align: left;
 			border: 1px solid white;
 			padding: 7px 0 0 10px;
 			font-weight: bold;
 			margin: 0 auto;
-			margin-top: 10px;
+			margin-top: 15px;
 			color: #002147;
 		}
 
@@ -280,9 +296,17 @@
 		a#button2:hover {
 			background-color: #CBCBCB;
 		}
+
+		.arrow {
+			height: 35px;
+			width: 35px;
+			background-image: url('images/SideArrow.png');
+			float: right;
+			margin: -7px 5px 0 0;
+		}
 		
 		#footer {
-			height: 150px;
+			height: 170px;
 			width: 1000px;
 			margin: 0 auto;
 			text-align: center;
@@ -293,24 +317,23 @@
 			border-top: 2px solid #D7BF00;
 		}
 
-		#copyright {
-			height: 50px;
-			width: 1000px;
+		#rights {
+			height: 20px;
+			width: 980px;
 			margin: 0 auto;
-			background-color: #D7BF00;
-		}
-
-		#footer-logo {
-			height: 70px;
-			width: 100px;
-			float: left;
-			margin: 40px 0 0 100px;
+			margin-top: 150px;
+			background-color: #1C1C1C;
+			font-family: Arial;
+			font-size: 0.7em;
+			color: white;
+			padding: 4px 0 0 20px;
+			text-align: left;
 		}
 
 		#address {
 			height: 80px;
 			width: 190px;
-			padding: 20px 20px 20px 0;
+			padding: 20px 20px 20px 20px;
 			font-family: Arial;
 			font-size: 0.7em;
 			color: white;
@@ -433,29 +456,41 @@
 			<div class="box-title">The Scholarship</div>
 			<div class="box-text">
 			Find out more about the scholarship, eligibility, and what you need to submit with your application.<br>
-				<a href="eligibility.html" id="button">Scholarship eligibility</a>
+				<a href="eligibility.html" id="button">Scholarship eligibility<div class="arrow"></div></a>
 			</div>
 		</div>
 		<div id="foundation-info">
 			<div class="box-title">The Foundation</div>
 			<div class="box-text">
 			Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees.
-				<a href="foundation.html" id="button2">About us</a>
+				<a href="foundation.html" id="button2">About us<div class="arrow"></div></a>
 			</div>
 		</div>
 		<div id="dates-deadlines">
 			<div id="date-title">Dates & Deadlines</div>
-			<ul id="date-text">
-				<li>03/01/2016: Application portal opens
-				<li>04/30/2016: Applications due</li>
-				<li>06/10/2016: Student interviews</li>
-				<li>07/8/2016: Award luncheon</li>
-			</ul>
+			<table id="date-table">
+				<tr>
+					<td>3/1/2016</td>
+					<td>Application opens</td>
+				</tr>
+				<tr>
+					<td>4/30/2016</td>
+					<td>Application due</li>
+				</tr>
+				<tr>
+					<td>6/10/2016</td>
+					<td>Student interviews</td>
+				</tr>
+				<tr>
+					<td>7/8/2016</td>
+					<td>Award luncheon</td>
+				</tr>
+			</table>
 		</div>
 	</div>
 	<div id="footer" class="shadow">
-		<div id="footer-logo"></div>
 		<div id="address">Contra Costa Association of Realtors®<br>1870 Olympic Blvd., Suite 200, Walnut Creek, CA 94596<br><br>Phone: (925) 295-1270<br>Fax: (925) 938-1294</div>
+		<div id="rights"><i>© 2016 CCAR Scholarship Foundation</i></div>
 	</div>
 </body>
 </html>
