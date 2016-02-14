@@ -6,7 +6,7 @@
 	
 	if ($_POST["submit"]) {
 		$result = '<div class="alert alert-success">Form submitted</div>';
-		if (!$_POST['plans']) {
+		if (!$_POST['plans'] ) {
 			
 			$error="<br />Please enter your plans after graduation";
 		
@@ -22,7 +22,7 @@
 				die("Could not connect to database");
 			};
 			//do something to database
-			$query = "INSERT INTO `extra-curricular` (`id`, `awards`, `business-courses-grades`, `current-business-courses`, `honor-societies`, `sports-clubs`, `plans-after-graduation`, `employer`, `supervisor`, `job-title`, `job-duties`, `full-or-part-time`, `job-date-start`, `job-date-end`, `reason-for-leaving`) VALUES('". $_SESSION['id'] ."', '". $_POST['honors'] ."', '". $_POST['past-courses'] ."', '". $_POST['current-courses'] ."', '". $_POST['societies'] ."', '". $_POST['sports'] ."', '". $_POST['plans'] ."', '". $_POST['employer'] ."', '". $_POST['supervisor'] ."', '". $_POST['job-title'] ."', '". $_POST['duties'] ."', '". $_POST['full-or-part-time'] ."', '". $_POST['work-time-start'] ."', '". $_POST['work-time-end'] ."', '". $_POST['reason-for-leaving'] ."')";
+			$query = "INSERT INTO `extra-curricular` (`id`, `awards`, `business-courses-grades`, `current-business-courses`, `honor-societies`, `sports-clubs`, `plans-after-graduation`, `employer`, `supervisor`, `job-title`, `job-duties`,  `job-date-start`, `job-date-end`, `reason-for-leaving`) VALUES('". $_SESSION['id'] ."', '". $_POST['honors'] ."', '". $_POST['past-courses'] ."', '". $_POST['current-courses'] ."', '". $_POST['societies'] ."', '". $_POST['sports'] ."', '". $_POST['plans'] ."', '". $_POST['employer'] ."', '". $_POST['supervisor'] ."', '". $_POST['job-title'] ."', '". $_POST['duties'] ."', '". $_POST['job-start'] ."', '". $_POST['job-end'] ."', '". $_POST['reason-for-leaving'] ."')";
 			
 			mysqli_query($link, $query);
 			

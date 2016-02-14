@@ -14,13 +14,13 @@
 		
 		if (!$_POST['reasons']) {
 			
-			$error="<br />Please enter how you heard of the scholarship";
+			$error.="<br />Please enter how you heard of the scholarship";
 		
 		}
 		
 		if (!$_POST['high-school-name'] OR !$_POST['high-school-address'] OR !$_POST['high-school-city'] OR !$_POST['high-school-state'] OR !$_POST['high-school-zip'] OR !$_POST['graduation'] ) {
 			
-			$error="<br />Please enter all high school information";
+			$error.="<br />Please enter all high school information";
 		
 		}
 		
