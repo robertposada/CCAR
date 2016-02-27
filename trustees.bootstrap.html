@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CCAR</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Latest compiled and minified CSS -->
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<style>
+
+       li {
+            text-decoration: none;
+        }
+
+		body {
+			background-color: #F0F0F0;
+			padding-top: 100px;
+		}
+
+        .boxes {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+		#home a {
+    		width: 100px;
+    		height: 100px;
+    		background-image: url('images/CCARlogo.png');
+    	}
+
+    	.jumbotron {
+    		background: #4986CF;
+    		/*background: url("images/CCARaward.jpg");*/
+    	}
+
+    	.footer {
+    		background: #2F3F4E;
+    		color: white;
+    		padding: 50px 0 50px 0;
+    		text-align: left;
+    	}
+
+        .footer-box {
+            /*text-align: center;*/
+        }
+
+        .footer-head {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1em;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .link {
+            background-color: #FFD84B;
+            border: 1px solid #003366;
+            font-family: 'Lato', sans-serif;
+            font-size: 1em;
+        }
+
+        a.link {
+            color: black;
+        }
+
+        .link:hover {
+            background-color: #F3E2A9;
+        }
+
+        .med-text {
+            color: #003366;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.65em;
+            padding-bottom: 5px;
+        }
+
+    	.middle {
+    		padding: 50px 0 50px 0;
+    	}
+
+    	.mission {
+    		/*background: #FFD84B;*/
+    		margin-top: -5px;
+    		padding: 10px 0 50px 0;
+    		text-align: center;
+    		font-size: 1.2em;
+    	}
+
+        .motto {
+            border-bottom: 2px solid #BDBDBD;
+            color: #003366;
+            font-family: 'Lato', sans-serif;
+            font-size: 2.5em;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-default {
+  			background-color:#2F3F4E;
+  			background-image: none;
+  			background-repeat: no-repeat;
+  			color:yellow;
+ 		}
+ 		
+ 		nav {
+ 			padding:25px;
+ 		
+ 		}
+ 		
+ 		.nav.navbar-nav li a {
+    		color: orange;
+		}
+		
+		.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    		background-color: #2F3F4E;
+    		color: white;
+		}
+		
+		.navbar .nav > li.dropdown.open > .dropdown-toggle, .navbar .nav > li.dropdown.active > .dropdown-toggle,
+		.navbar .nav > li.dropdown.open.active > .dropdown-toggle {
+    		color: white;
+    		background-color: transparent;
+    		border-color: transparent;
+    		background:transparent;
+    		outline:none;
+    		
+		}
+		
+		img {
+			width: 90%;
+		}
+		
+		
+
+        p {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        
+
+    	
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
+				"#my-navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">CCAR</a>
+			</div>
+			<div class="collapse navbar-collapse" id="my-navbar">
+				<ul class="nav navbar-nav">
+	 				<li class="active"><a href="#">HOME</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">SCHOLARSHIP<span class="caret"></span></a>
+	    				<ul class="dropdown-menu">
+	    					<li><a href="#">ELIGIBILITY</a></li>
+							<li><a href="#">APPLICATION</a></li>
+	    				</ul>
+					</li>
+	  				<li class="dropdown">
+	  					<a class="dropdown-toggle" data-toggle="dropdown" href="#">FOUNDATION<span class="caret"></span></a>
+	    				<ul class="dropdown-menu">
+		  					<li><a href="#">TRUSTEES</a></li>
+		  					<li><a href="#">CONTRIBUTION</a></li>
+		  					<li role="separator" class="divider"></li>
+		  					<li><a href="#">EVENTS</a></li>
+		  				</ul>
+	  				</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="container">
+        <div class="row">
+        	<div class="col-sm-12 mission">
+	        	<div class="col-sm-2"></div>
+	            <div class="col-sm-8">
+	            	<h1 class="motto">Meet the CCAR Scholarship Trustees!</h1>
+
+	            	<p>The Contra Costa Association of Realtors Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of Realtors' desire to make a difference!</p>
+
+	            </div>
+	            <div class="col-sm-2"></div>
+	        </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 middle">
+        		<div class="col-sm-2"></div>
+        		<div class="col-sm-8 boxes">
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/lynda.jpg" alt="Lynda Dimond" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Lynda Dimond
+								</h3>
+								<span>President<br>Keller Williams Realty<br>(925) 787-9595<br>
+								<a href="mailto:lynda@thedimondteam.com">lynda@thedimondteam.com</a></span>
+								
+							</figcaption>
+						</figure>
+                        
+                        
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/julied.jpg" alt="Julie Del Santo" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Julie Del Santo
+								</h3>
+								<span>Vice President<br>Dadum Real Estate<br>(925) 818-5500<br>
+								<a href="mailto:julie@dudum.com">julie@dudum.com</a></span>
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 	
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/juliesullivan.jpg" alt="Julie Sullivan" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Julie Sullivan
+								</h3>
+								<span>Secretary<br>(925) 200-3411<br>
+								<a href="mailto:julie@julie-sullivan.com">julie@julie-sullivan.com</a></span>
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 </div>
+        		</div>
+        		<div class="col-sm-2"></div>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 middle">
+        		<div class="col-sm-2"></div>
+        		<div class="col-sm-8 boxes">
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="WashU-Pic.jpg" alt="Karen Newsom" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Karen Newsom
+								</h3>
+								<span>Administrative Assistant<br>(925) 819-1781<br>
+								<a href="mailto:ccarsf2015@outlook.com">ccarsf2015@outlook.com</a></span>
+								
+							</figcaption>
+						</figure>
+                        
+                        
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/marianneb.jpg" alt="Marianne Bordogna" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Marianne Bordogna
+								</h3>
+								<span>Treasurer<br>Keller Williams Realty<br>(925) 202-5508<br>
+								<a href="mailto:marriane@marrianebordogna.com">marriane@marrianebordogna.com</a></span>
+								
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 	
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="WashU-Pic.jpg" alt="Dianne Harrison" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Dianne Harrison
+								</h3>
+								<span>Trustee<br>J. Rockcliff Realtors<br>(925) 788-1944<br>
+								<a href="mailto:dharrison@rockcliff.com">dharrison@rockcliff.com</a></span>
+								
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 </div>
+        		</div>
+        		<div class="col-sm-2"></div>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 middle">
+        		<div class="col-sm-2"></div>
+        		<div class="col-sm-8 boxes">
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/tomhart.jpg" alt="Tom Hart" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Tom Hart
+								</h3>
+								<span>Trustee<br>Berkshire Hathaway Drysdale Properties<br>(925) 321-3220<br>
+								<a href="mailto:tom@tomhart.com">tom@tomhart.com</a></span>
+								
+							</figcaption>
+						</figure>
+                        
+                        
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="WashU-pic.jpg" alt="Bryan Hurlbut" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Bryan Hurlbut
+								</h3>
+								<span>Trustee<br>Empire Realty Associates<br>(925) 383-5500<br>
+								<a href="mailto:bhurlbut@empirera.com">bhurlbut@empirera.com</a></span>
+								
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 	
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/long.jpg" alt="Long Nguyen" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Long Nguyen
+								</h3>
+								<span>Trustee<br>Dudum Real Estate<br>(925) 876-7888<br>
+								<a href="mailto:long@go2long.com">long@go2long.com</a></span>
+								
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 </div>
+        		</div>
+        		<div class="col-sm-2"></div>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 middle">
+        		<div class="col-sm-2"></div>
+        		<div class="col-sm-8 boxes">
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/bettesueschack.jpg" alt="Bette Sue Schack" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Bette Sue Schack
+								</h3>
+								<span>Trustee<br>Sotheby's International<br>(925) 784-0429<br>
+								<a href="mailto:bettesueschack@msn.com">bettesueschack@msn.com</a></span>
+								
+							</figcaption>
+						</figure>
+                        
+                        
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/paulz.jpg" alt="Paul Zuvella" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Paul Zuvella
+								</h3>
+								<span>Trustee<br>Better Homes & Gardens<br>(925) 735-6084<br>
+								<a href="mailto:pzuvella@comcast.net">pzuvella@comcast.net</a></span>
+								
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 	
+        			 </div>
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="images/wendymoore.jpg" alt="Wendy Moore" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Wendy Moore
+								</h3>
+								<span>Trustee<br>Alain Pinel Realtors<br>(925) 570-5187<br>
+								<a href="mailto:wmoore@apr.com">wmoore@apr.com</a></span>
+								
+								
+							</figcaption>
+						</figure>
+        			 	
+        			 </div>
+        		</div>
+        		<div class="col-sm-2"></div>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 middle">
+        		<div class="col-sm-2"></div>
+        		<div class="col-sm-8 boxes">
+        			 <div class="col-sm-4">
+        			 	
+        			 	<figure class="block--speaker">
+							<div class="speaker__img row">
+								<img class="img-circle" src="WashU-pic.jpg" alt="Chuck Miller" />
+							</div>
+							<figcaption class="block__label">
+								<h3 class="label__heading">
+									Chuck Miller
+								</h3>
+								<span>Trustee<br>-<br>-<br>
+								<a href="">email</a></span>
+								
+							</figcaption>
+						</figure>
+                        
+                        
+        			 </div>
+        			 
+        		</div>
+        		<div class="col-sm-2"></div>
+        	</div>
+        </div>
+        <div class="row footer">
+        	<!-- <div class="col-sm-12 footer"> -->
+        		<div class="col-sm-2"></div>
+        		<div class="col-sm-2 footer-box">
+        			<p>
+        			Contra Costa Association of Realtors®</br>
+					1870 Olympic Blvd., Suite 200</br>
+					Walnut Creek, CA 94596</br>
+					</br>
+					Phone: (925) 295-1270</br>
+					Fax: (925) 938-1294
+					</p>
+        		</div>
+                <div class="col-sm-2 footer-box"></div>
+                <div class="col-sm-2 footer-box">
+                    <h4 class="footer-head">Scholarship</h4>
+                    <ul>
+                        <li><a href="#">Eligibility</a></li>
+                        <li><a href="#">Application</a></li>
+                    </ul>
+                </div>
+        		<div class="col-sm-2 footer-box">
+                    <h4 class="footer-head"><a href="#">Foundation</a></h4>
+                    <ul>
+                        <li><a href="#">Trustees</a></li>
+                        <li><a href="#">Contribution</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2"></div>
+        	</div>
+        <!-- </div> -->
+    </div>
+
+</body>
+
+</html>
